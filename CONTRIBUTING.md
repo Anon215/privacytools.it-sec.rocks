@@ -1,0 +1,1 @@
+Bitte schau im **teilnehmen** und **Richtlinien, um einen Beitrag zu einzureichen** Bereich der [readme](https://github.com/Anon215/privacytools.it-sec.rocks/blob/master/README.md) nach, um die aktuellsten Richtlinien zu lesen. Danke.
