@@ -10,7 +10,7 @@ Momentan ist das Repo und die Seite hier "under heavy development"!
 Gerne kannst du aber schon jetzt auch eigene Vorschläge oder Kritik einbringen.             
 Dafür stehen dir verschiedene Kanäle zur Verfügung.
 
-**Sprich einfach mit mir.**
+**Sprich einfach mit mir.**               
 ToxID: 96DBEC75B69DE689DF4375F82233AB489A2957200BF24574A0E472822A9ECC0F76D1BADE720D                 
 
 Jabber: gitacc@xmpp.bytesund.biz                 
