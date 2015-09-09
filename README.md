@@ -34,7 +34,7 @@ Maximal werden 3 Anbieter direkt vorgeschlagen und weitere können unter "Worth 
 
 ## Hyperlinks
 
-- Bitte benutze das `target="_blank"` Attribut bei Verlinkungen ([Beispiel](https://github.com/Anon215/privacytools.it-sec.rocks/blob/01af55ae9d03e9bb453f7891093704aaade80ec4/index.html#L136))
+- Bitte benutze das `target="_blank"` Attribut bei Verlinkungen ([Beispiel](https://github.com/Anon215/privacytools.it-sec.rocks/blob/master/index.html#L132))
 
 ## Unterstütze privacytools.it-sec.rocks
 
