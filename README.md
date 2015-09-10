@@ -4,7 +4,7 @@ _Verschlüsselung gegen globale Massenüberwachung_
 
 ## teilnehmen
 
-Dies ist der deutsche Fork von privacytools.io.            
+Dies ist ein deutscher Ableger der englischen Seite https://www.privacytools.io.            
 Es ist wichtig das Projekt zu unterstützen.         
 Momentan ist das Repo und die Seite hier "under heavy development"!              
 Gerne kannst du aber schon jetzt auch eigene Vorschläge oder Kritik einbringen.             
