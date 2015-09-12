@@ -13,7 +13,7 @@ Dafür stehen dir verschiedene Kanäle zur Verfügung.
 **Sprich einfach mit mir.**               
 ToxID: 96DBEC75B69DE689DF4375F82233AB489A2957200BF24574A0E472822A9ECC0F76D1BADE720D                 
 Jabber: gitacc@xmpp.bytesund.biz                 
-Mail: kritik@it-sec.rocks
+Mail: anregung{ät}it-sec.rocks
 
 Bitte sieh davon ab hier auf Github Vorschläge einzubringen und Änderungen einzureichen.
 Dafür habe ich andere Kanäle, auf denen ich besser erreichbar bin.
@@ -25,7 +25,7 @@ Du hast diesen Text gelesen? Dann darfst du dich einbringen.
 ## Qualität über Quantität
 
 Ich versuche es einfach zu halten und empfehle nicht alle guten Anbieter, nur ein paar von ihnen. 
-Maximal werden 3 Anbieter direkt vorgeschlagen und weitere können unter "Worth Mentioning" hinzugefügt werden. ([Beispiel](https://privacytools.it-sec.rocks/#im)) 
+Maximal werden 3 Anbieter direkt vorgeschlagen und weitere können unter "Erwähnenswert" hinzugefügt werden. ([Beispiel](https://privacytools.it-sec.rocks/#im)) 
 
 ## Bilddateien
 
