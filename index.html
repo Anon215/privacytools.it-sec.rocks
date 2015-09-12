@@ -8,7 +8,7 @@
 <meta name="keywords" content="privacy tools, surveillance, encryption, edward snowden, nsa, tor, bitcoin">
 <meta name="description" content="Du wirst beobachtet. Private und staatlich finanzierte Organisationen protokollieren und speichern deine online Aktivit&auml;ten. privacytools.it-sec.rocks bietet hier Wissenswertes und Werkzeuge um deine Privatsph&auml;re gegen die globale Massen&uuml;berwachung zu sch&uuml;tzen.">
 
-<title>privacy tools - Verschl&uuml;sselung gegen globale Massen&uuml;berwachung 🔒</title>
+<title>privacy tools - Verschl&uuml;sselung gegen globale Massen&uuml;berwachung ðŸ”’</title>
 
 <link rel="apple-touch-icon" sizes="57x57" href="https://privacytools.it-sec.rocks/img/favicons/apple-touch-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="https://privacytools.it-sec.rocks/img/favicons/apple-touch-icon-60x60.png">
@@ -49,6 +49,23 @@
 <meta property="og:locale" content="de_DE"/>
 <meta property="og:site_name" content="privacytools.it-sec.rocks"/>
 
+<script>
+        function scrollToTop(scrollDuration) {
+        const   scrollHeight = window.scrollY,
+                scrollStep = Math.PI / ( scrollDuration / 15 ),
+                cosParameter = scrollHeight / 2;
+        var     scrollCount = 0,
+                scrollMargin,
+                scrollInterval = setInterval( function() {
+                    if ( window.scrollY != 0 ) {
+                        scrollCount = scrollCount + 1;  
+                        scrollMargin = cosParameter - cosParameter * Math.cos( scrollCount * scrollStep );
+                        window.scrollTo( 0, ( scrollHeight - scrollMargin ) );
+                    } 
+                    else clearInterval(scrollInterval); 
+                }, 15 );
+        }
+    </script>
 </head>
 
 <body>
@@ -74,23 +91,23 @@
 <ul class="dropdown-menu" role="menu">
 <li><a href="#ukusa">Vermeide alle in US und UK beheimateten Dienste</a></li>
 <li><a href="#vpn">Virtuelles Privates Netzwerk (VPN)</a></li>
-<li><a href="#email">Private Emails</a></li>
-<li><a href="#wc">Warrant Canaries - wichtiger Kanarienvogel</a></li>
-<li><a href="#cloud">Verschl&uuml;sselte Cloud Speicher</a></li>
+<li><a href="#email">Emailanbieter</a></li>
+<li><a href="#wc">Warrant Canary - Kanarienvogel ausgeflogen?</a></li>
+<li><a href="#cloud">Verschl&uuml;sselte Clouddienste</a></li>
 <li><a href="#social">Dezentralisierte Soziale Netzwerke</a></li>
 <li><a href="#dns">Domain Name System (DNS)</a></li>
-<li><a href="#search">Web Such Maschinen</a></li>
+<li><a href="#search">Web Suchmaschinen</a></li>
 </ul>
 </li>
 
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Browser<span class="caret"></span></a>
 <ul class="dropdown-menu" role="menu">
-<li><a href="#browser">Empfehlungen</a></li>
-<li><a href="#fingerprint">Fingerabdruck</a></li>
+<li><a href="#browser">Browser Empfehlungen</a></li>
+<li><a href="#fingerprint">Browser Fingerabdruck</a></li>
 <li><a href="#webrtc">WebRTC IP L&uuml;cke</a></li>
-<li><a href="#addons">Firefox Privatsph&auml;ren-Addons</a></li>
-<li><a href="#about_config">Privatsph&auml;re verbessernde Einstellungen</a></li>
+<li><a href="#addons">Firefox: Privatsph&auml;re-Addons</a></li>
+<li><a href="#about_config">Firefox: Einstellungen zum Datenschutz</a></li>
 </ul>
 </li>
 
@@ -106,9 +123,9 @@
 <li><a href="#encrypt">Dateiverschl&uuml;sselung</a></li>
 <li><a href="#sync">Sichere Dateisynchronisation</a></li>
 <li><a href="https://privacytools.it-sec.rocks/password.html" target="_blank">Sicherer Passwort Generator</a></li>
-<li><a href="#network">Selbst verwaltetes Netzwerk</a></li>
-<li><a href="#mycloud">Selbst gehosteter Cloud Server</a></li>
-<li><a href="#productivity">Produktivit&auml;ts Werkzeuge</a></li>
+<li><a href="#network">Selbst verwaltete Netzwerke</a></li>
+<li><a href="#mycloud">Selbst gehostete Cloud Server</a></li>
+<li><a href="#productivity">Produktivit&auml;ts - Werkzeuge</a></li>
 </ul>
 </li>
 
@@ -141,7 +158,7 @@
 <div class="container theme-showcase" role="main">
 <div class="jumbotron">
 <h1><a href="https://privacytools.it-sec.rocks/" title="privacy tools"><img src="img/layout/logo.png" class="img-responsive" alt="privacytools.it-sec.rocks"></a></h1>
-<p>Du wirst beobachtet. Private und staatlich finanzierte Organisationen protokollieren und speichern deine online Aktivit&auml;ten. privacytools.it-sec.rocks bietet hier Wissenswertes und Werkzeuge um deine Privatsph&auml;re gegen die globale Massen&uuml;berwachung zu sch&uuml;tzen.</p>
+<p>Du wirst beobachtet. Private und staatlich finanzierte Organisationen protokollieren und speichern deine online Aktivit&auml;ten. Ich biete hier Wissenswertes und Werkzeuge um deine Privatsph&auml;re gegen die globale Massen&uuml;berwachung zu sch&uuml;tzen.</p>
 </div>
 
 <div class="page-header">
@@ -150,7 +167,7 @@
 <blockquote>
 <p>
 <a href="http://www.ted.com/talks/glenn_greenwald_why_privacy_matters" target="_blank" title="Glenn Greenwald - Why privacy matters - TED Talk"><img src="img/layout/Glenn-Greenwald-Why-privacy-matters.jpg" class="img-responsive pull-right" alt="Glenn Greenwald: Why privacy matters" style="margin-left:20px;"></a>
-Als ich die letzten 16 Monate &uuml;berall auf der Welt &uuml;ber dieses Thema gesprochen habe,<br> sagte jedes Mal jemand zu mir: "Ich mache mir nicht wirklich Sorgen das jemand in meine Privatsph&auml;re<br> eindringt weil ich nichts zu verbergen habe." Ich sage dann immer dasselbe zu ihnen.<br> Ich hole einen Stift aus der Tasche, schreibe meine Email Adresse auf und sage <br>"Hier ist meine Email Adresse. Ich w&uuml;rde dich bitten mir alle deine Passw&ouml;rter f&uuml;r alle deine <br>Email Accounts zu schicken, sobald du daheim bist. Nicht nur ein paar, sondern auch die <br>f&uuml;r deine Arbeit und wirklich ALLE. Ich m&ouml;chte n&auml;mlich ein wenig herumst&ouml;bern was du online so treibst, <br>lesen was du lesen m&ouml;chtest und alles Interessante, was ich finde, ver&ouml;ffentlichen. <br>Und was macht das schon, wenn du doch keine b&ouml;se Person bist, wenn du nichts Verbotenes tust, <br>dann solltest du ja nichts zu verheimlichen haben."<br> <strong>Nicht ein Einziger ist auf dieses Angebot eingegangen.</strong></p>
+Als ich die letzten 16 Monate &uuml;berall auf der Welt &uuml;ber dieses Thema gesprochen habe,<br> sagte jedes Mal jemand zu mir: "Ich mache mir nicht wirklich Sorgen das jemand in meine Privatsph&auml;re<br> eindringt, weil ich nichts zu verbergen habe." Ich sage dann immer dasselbe zu ihnen.<br> Ich hole einen Stift aus der Tasche, schreibe meine Email Adresse auf und sage <br>"Hier ist meine Email Adresse. Ich w&uuml;rde dich bitten mir alle deine Passw&ouml;rter f&uuml;r alle deine <br>Email Accounts zu schicken, sobald du daheim bist. Nicht nur ein paar, sondern auch die <br>f&uuml;r deine Arbeit und wirklich ALLE. Ich m&ouml;chte n&auml;mlich ein wenig herumst&ouml;bern was du online so treibst, <br>lesen was du lesen m&ouml;chtest und alles Interessante, was ich finde, ver&ouml;ffentlichen. <br>Und was macht das schon, wenn du doch keine b&ouml;se Person bist, wenn du nichts Verbotenes tust, <br>dann solltest du ja nichts zu verheimlichen haben."<br> <strong>Nicht ein Einziger ist auf dieses Angebot eingegangen.</strong></p>
 <footer>Glenn Greenwald in <cite title="Why privacy matters - TED Talk"><a href="http://www.ted.com/talks/glenn_greenwald_why_privacy_matters" target="_blank">Why privacy matters - TED Talk</a></cite></footer>
 </blockquote>
 </p>
@@ -256,7 +273,7 @@ Dieses Open Source Werkzeug nutzt bekannte Methoden und versucht die schlimmsten
 <h3>Ein paar gute Nachrichten</h3>
 <ul>
 	<li><a href="https://fix10.isleaked.com/" target="_blank">Windows 10 Privatsph&auml;renfix.</a> - fix10.isleaked.com (englisch!)</li>
-	<li><a href="http://arstechnica.com/information-technology/2015/08/windows-10-doesnt-offer-much-privacy-by-default-heres-how-to-fix-it/" target="_blank">Windows 10 doesn’t offer much privacy by default: Here’s how to fix it. </a> - Ars Technica.</li>
+	<li><a href="http://arstechnica.com/information-technology/2015/08/windows-10-doesnt-offer-much-privacy-by-default-heres-how-to-fix-it/" target="_blank">Windows 10 doesnâ€™t offer much privacy by default: Hereâ€™s how to fix it. </a> - Ars Technica.</li>
 	<li><a href="https://www.reddit.com/r/Windows10/comments/3f38ed/guide_how_to_disable_data_logging_in_w10" target="_blank">Guide: How to disable data logging in W10.</a></li>
 
 </ul>
@@ -504,7 +521,8 @@ Dieses Open Source Werkzeug nutzt bekannte Methoden und versucht die schlimmsten
 <li>Akzeptiert Bitcoin, Bargeld oder Prepaid Karten als Zahlungsmethode.</li>
 <li>Ben&ouml;tigt keine pers&ouml;nlichen Informationen, um ein Benutzerkonto zu erstellen. Nur Benutzername, Passwort und <a href="#email">Email.</a></li>
 </ul>
-<p>Ich stehe in keinerlei gesch&auml;ftlicher Beziehung mit den hier angegebenen VPN Anbietern. Nur so kann ich auch ernsthafte und unabh&auml;ngige Empfehlungen aussprechen.</p>
+<br>
+<p><strong>Ich stehe in keinerlei gesch&auml;ftlicher Beziehung mit diesen VPN Anbietern. <br>Nur so kann ich ernsthafte und unabh&auml;ngige Empfehlungen aussprechen.</strong></p>
 
 </div>
 
@@ -514,8 +532,8 @@ Dieses Open Source Werkzeug nutzt bekannte Methoden und versucht die schlimmsten
 <li><a href="http://torrentfreak.com/how-to-make-vpns-even-more-secure-120419/" target="_blank">How To Make VPNs Even More Secure</a></li>
 <li><a href="https://blog.spideroak.com/20140124105217-vpn-privacy-anonymity" target="_blank">VPN, privacy and anonymity - SpiderOak</a></li>
 <li><a href="https://vikingvpn.com/blogs/off-topic/beware-of-vpn-marketing-and-affiliate-programs" target="_blank">Beware of False Reviews - VPN Marketing and Affiliate Programs</a></li>
-<li><a href="http://torrentfreak.com/anonymous-vpn-service-provider-review-2015-150228/" target="_blank">Which VPN Services Take Your Anonymity Seriously?</a><br />(<strong>Note:</strong> The providers listed first in the TorrentFreaks article are sponsored)</li>
-<li><a href="https://www.goldenfrog.com/take-back-your-internet/articles/7-myths-about-vpn-logging-and-anonymity" target="_blank">I am Anonymous When I Use a VPN - 7 Myths Debunked</a><br />(<strong>Note:</strong> While this is a good read, they also use the article for self promotion)</li>
+<li><a href="http://torrentfreak.com/anonymous-vpn-service-provider-review-2015-150228/" target="_blank">Which VPN Services Take Your Anonymity Seriously?</a><br />(<strong>Achtung:</strong> Die erst gelisteten Anbieter bei TorrentFreaks sind gesponsert!)</li>
+<li><a href="https://www.goldenfrog.com/take-back-your-internet/articles/7-myths-about-vpn-logging-and-anonymity" target="_blank">I am Anonymous When I Use a VPN - 7 Myths Debunked</a><br />(<strong>Achtung:</strong> Die Informationen sind zwar empfehlenswert aber der Artikel wird zur Selbstpropagation genutzt)</li>
 <li><a href="http://torrentfreak.com/proxy-sh-vpn-provider-monitored-traffic-to-catch-hacker-130930/" target="_blank">Proxy.sh VPN Provider Sniffed Server Traffic to Catch Hacker</a></li>
 <li><a href="https://proxy.sh/panel/knowledgebase.php?action=displayarticle&id=5" target="_blank">Ethical policy - All of the reasons why Proxy.sh might enable logging</a></li>
 <li><a href="https://www.ivpn.net/privacy" target="_blank">IVPN.net will collect your email and IP address after sign up</a><br />Read the <a data-toggle="tooltip" data-placement="top" data-original-title="The IP collected at signup is only used for a few seconds by our fraud module and then discarded, it is not stored. Storing them would significantly increase our own liability and certainly would not be in our interest. You're absolutely welcome to signup using Tor or a VPN.">Email statement</a> from IVPN.</li>
@@ -530,8 +548,8 @@ Dieses Open Source Werkzeug nutzt bekannte Methoden und versucht die schlimmsten
 <h1>Was ist ein Warrant Canary?</h1>
 </div>
 <img src="img/layout/warrant-canary.jpg" class="img-responsive pull-right" alt="Warrant Canary Example" style="margin-left:20px;">
-<p>A warrant canary is a posted document stating that an organization has not received any secret subpoenas during a specific period of time. If this document fails to be updated during the specified time then the user is to assume that the service has received such a subpoena and should stop using the service.</p>
-<h4>Warrant Canary Examples:</h4>
+<p>Als "Warrant Canary" bezeichnet man ein Dokument oder Bild, das auf einer Seite einsehbar ist. Dies zeigt an, dass es in einem bestimmten Zeitabschnitt keine Zugriffe oder Anfragen von Ermittlungsbeh&ouml;rden gab. Wenn diese Datei eine gewisse zeitlang nicht aktualisiert wurde oder verschwindet ist das ein Zeichen daf&uuml;r, dass der Anbieter eine Vorladung bekommen hat oder Daten offenlegen sollte. Dann sollte man den Dienst nicht mehr nutzen! Eingef&uuml;hrt wurden Warrant Canaries, um die so genannte Gag Order zu umgehen.</p>
+<h4>Warrant Canary Beispiele:</h4>
 <ol>
 <li><a href="https://proxy.sh/canary" target="_blank">https://proxy.sh/canary</a></li>
 <li><a href="https://www.ivpn.net/resources/canary.txt" target="_blank">https://www.ivpn.net/resources/canary.txt</a></li>
@@ -540,7 +558,7 @@ Dieses Open Source Werkzeug nutzt bekannte Methoden und versucht die schlimmsten
 <li><a href="https://lokun.is/canary.txt" target="_blank">https://lokun.is/canary.txt</a></li>
 <li><a href="https://www.ipredator.se/static/downloads/canary.txt" target="_blank">https://www.ipredator.se/static/downloads/canary.txt</a></li>
 </ol>
-<h4>Related Warrant Canary Information</h4>
+<h4>Weitere Informationen zum Warrant Canary</h4>
 <ul>
 <li><a href="https://www.eff.org/de/deeplinks/2014/04/warrant-canary-faq" target="_blank">Warrant Canary Frequently Asked Questions</a></li>
 <li><a href="https://canarywatch.org/" target="_blank">Canarywatch.org</a> - Lists warrant canaries, tracks changes or disappearances of canaries</li>
@@ -549,7 +567,7 @@ Dieses Open Source Werkzeug nutzt bekannte Methoden und versucht die schlimmsten
 
 <a class="anchor" name="browser"></a>
 <div class="page-header">
-<h1>Browser Recommendation</h1>
+<h1>Browser Empfehlungen</h1>
 </div>
 
 <div class="row">
@@ -560,165 +578,187 @@ Dieses Open Source Werkzeug nutzt bekannte Methoden und versucht die schlimmsten
 <h3 class="panel-title">Mozilla Firefox</h3>
 </div>
 <div class="panel-body">
-<p><img src="img/tools/Firefox.png" align="right" style="margin-left:5px;"><a href="http://www.erfahrungen.com/mit/Firefox/" target="_blank">Firefox</a> is fast, reliable, open source and respects your privacy. Don't forget to adjust the settings according to our recommendations: <a href="#webrtc">WebRTC</a> and <a href="#about_config">about:config</a> and get the <a href="#addons">privacy addons</a>.</p>
-<p><a href="https://www.firefox.com/" target="_blank"><button type="button" class="btn btn-success">Download: www.firefox.com</button></a></p>
+<p><img src="img/tools/Firefox.png" align="right" style="margin-left:5px;"><a href="http://www.erfahrungen.com/mit/Firefox/" target="_blank">Firefox</a> ist schnell, zuverl&auml;ssig, Open Source und respektiert deine Privatsph&auml;re. Vergiss nicht die Optionen gem&auml;&szlig; unseren Empfehlungen einzustellen: <a href="#webrtc">WebRTC</a> und <a href="#about_config">about:config</a> und hol dir die <a href="#addons">Privatsph&auml;re AddOns</a>.</p>
+<p><a href="https://www.mozilla.org/de/firefox/new/?scene=2#download-fx" target="_blank"><button type="button" class="btn btn-success">Download: Firefox</button></a></p>
 <p>OS: Windows, Mac, Linux, Android, BSD.</p>
 </div>
 </div>
 </div>
 
-<!-- IceCate removed
-<div class="col-sm-4">
-<div class="panel panel-info">
-<div class="panel-heading">
-<h3 class="panel-title">GNU IceCat</h3>
-</div>
-<div class="panel-body">
-<p><img src="img/tools/IceCat.png" align="right" style="margin-left:5px;">GNU IceCat is a good choice for privacy related matters. It is a free software rebranding of the Mozilla Firefox web browser distributed by the GNU Project. IceCat comes with pre-installed privacy addons.</p>
-<p><a href="http://www.gnu.org/software/gnuzilla/" target="_blank"><button type="button" class="btn btn-info">Download: www.gnu.org</button></a></p>
-<p>OS: Windows, Mac, Linux, Android.</p>
-</div>
-</div>
-</div>
--->
-
 <div class="col-sm-4">
 <div class="panel panel-warning">
 <div class="panel-heading">
-<h3 class="panel-title">Tor Browser Bundle</h3>
+<h3 class="panel-title">Tor Browser</h3>
 </div>
 <div class="panel-body">
-<p><img src="img/tools/Tor-Browser.png" align="right" style="margin-left:5px;">Tor Browser is your choice if you need an extra layer of anonymity. It's a modified version of Firefox, it comes with pre-installed privacy addons, encryption and an advanced proxy.</p>
-<p><a href="https://www.torproject.org/" target="_blank"><button type="button" class="btn btn-warning">Download: www.torproject.org</button></a></p>
+<p><img src="img/tools/Tor-Browser.png" align="right" style="margin-left:5px;">Der Tor Browser ist eine gute Wahl wenn du Plus an Anonymit&auml;t w&uuml;nscht. Es ist ein modifizierter Firefox und hat vorinstallierte Privatsph&auml;re AddOns, Verschl&uuml;sselung und einen erweiterten Proxy.</p>
+<p><a href="https://www.torproject.org/" target="_blank"><button type="button" class="btn btn-warning">Download: Tor Bundle</button></a></p>
 <p>OS: Windows, Mac, Linux, <a href="https://mike.tig.as/onionbrowser/" target="_blank">iOS</a>, <a href="https://www.torproject.org/docs/android.html.en" target="_blank">Android</a>, <a href="https://github.com/torbsd/openbsd-ports" target="_blank">OpenBSD.</a></p>
 </div>
 </div>
 </div>
 
+
+<div class="col-sm-4">
+<div class="panel panel-info">
+<div class="panel-heading">
+<h3 class="panel-title">JonDoFox</h3>
+</div>
+<div class="panel-body">
+<p><img src="img/tools/JonDoFox.png" align="right" style="margin-left:5px;">Profil f&uuml;r den Firefox, insbesondere f&uuml;r anonymes und sicheres surfen gedacht.</p>
+<p><a href="https://www.anonym-surfen.de/jondofox.html" target="_blank"><button type="button" class="btn btn-info">Download: JonDoFox & JAP</button></a></p>
+<p>OS: Windows, Mac, Linux.</p>
+</div>
+</div>
 </div>
 
-<h3>Worth Mentioning</h3>
+</div>
+
+<h3>Erw&auml;hnenswert</h3>
 <ul>
-<li><a href="https://anonymous-proxy-servers.net/en/jondofox.html" target="_blank">JonDoFox</a> - A profile for the Firefox web browser, particularly optimized for anonymous and secure web surfing.</li>
+<li><a href="http://links.twibright.com/" target="_blank">Links2</a> - ist ein leichtgewichtiger (textbasierter) Konsolenbrowser. Kann auch in einem grafischen Modus betrieben werden. Verf&uuml;gbar f&uuml;r Linux (in den Repos) und mit CygWin auch unter <a href="http://links.twibright.com/download/binaries/win32/" target="_blank">Windows</a>.</li>
 </ul>
 
 
 <a class="anchor" name="fingerprint"></a>
 <div class="page-header">
-<h1>Browser Fingerprint - Is your browser configuration unique?</h1>
+<h1>Browser Fingerabdruck - Ist dein Browser einzigartig?</h1>
 </div>
 <div class="alert alert-warning" role="alert">
-<strong>Your Browser sends information that makes you unique amongst millions of users and therefore easy to identify.</strong>
+<strong>Dein Browser sendet Daten, die ihn unter Millionen anderen Nutzern einzigartig und leicht identifizierbar macht.</strong>
 </div>
 
 <img src="img/layout/browser-fingerprint.jpg" class="img-responsive pull-right" alt="Warrant Canary Example" style="margin-left:20px;">
 
-<p>When you visit a web page, your browser voluntarily sends information about its configuration, such as available fonts, browser type, and add-ons. If this combination of information is unique, it may be possible to identify and track you without using cookies. EFF created a Tool called <a href="https://panopticlick.eff.org/" target="_blank">Panopticlick</a> to test your browser to see how unique it is.</p>
+<p>Sobald du eine Webseite besuchst sendet dein Browser bereitwillig Daten &uuml;ber seine Konfiguration. Daten wie unterst&uuml;tzte Schriften, Browser Typ (UserAgent), Bildschirmaufl&ouml;sung und installierte AddOns. Wenn diese Art von Information einzigartig ist, ist es m&ouml;glich dich zu identifizieren und mit Cookies zu verfolgen. EFF hat ein Tool namens <a href="https://panopticlick.eff.org/" target="_blank">Panopticlick</a> entwickelt, um zu testen wie einzigartig dein Browser ist.</p>
 
-<p><a href="https://panopticlick.eff.org/" target="_blank"><button type="button" class="btn btn-warning">Test your Browser now</button></a></p>
+<p><a href="https://panopticlick.eff.org/" target="_blank"><button type="button" class="btn btn-warning">Teste deinen Browser</button></a></p>
 
-<p>You need to find what <strong>most browsers</strong> are reporting, and then use those variables to bring your browser in the same population. This means having the same fonts, plugins, and extensions installed as the large installed base. You should have a <a href="https://addons.mozilla.org/en-US/firefox/addon/random-agent-spoofer/" target="_blank">spoofed user agent string</a> to match what the large userbase has. You need have the same settings enabled and disabled, such as DNT and WebGL. You need your browser to look as common as everyone else. Disabling JavaScript, using Linux, or even the TBB, will make your browser stick out from the masses.</p>
+<p>Wenn du wei&szlig;t was die <strong>meisten Browser</strong> von sich preisgeben kann diese Erkenntnisse genutzt werden. Das bedeutet installierte Schriftarten, Plugins, und Erweiterungen zu verwenden, die von der Masse der Menschen genutzt werden . Du solltest einen <a href="https://addons.mozilla.org/de/firefox/addon/random-agent-spoofer/" target="_blank">gef&auml;lschten User Agent</a> verwenden, um der gro&szlig;en Nutzerschaft besser zu entsprechen. Du solltest die gleichen Einstellungen aktiviert und deaktiviert haben, sowas wie DoNotTrack und WebGL. Dein Browser sollte so auff&auml;llig und gew&ouml;hnlich sein wie jeder andere auch. Deaktiviertes JavaScript, die Nutzung von Linux und sogar das Tor Browser Bundle wird dein Browser schnell aus der Masse herausstechen lassen.</p>
 
-<p>Modern web browsers have not been architected to assure personal web privacy. Rather than worrying about being fingerprinted, it seems more practical to use <a href="#addons">free software plugins</a> like Privacy Badger, uBlock Origin and Disconnect. They not only respect your freedom, but your privacy also. You can get much further with these than trying to manipulate your browser's fingerprint.</p>
+<p>Moderne Webbrowser sind nicht dazu entwickelt worden die pers&ouml;nliche Privatsph&auml;re und Datenschutz zu gew&auml;hrleisten. Es ist wohl besser <a href="#addons">freie Software Plugins</a> wie PrivacyBadger, uBlock Origin und Disconnect zu nutzen als sich &uuml;ber seinen Fingerabdruck Gedanken zu machen. Diese respektieren nicht nur deine Freiheit, sondern auch deine Privatsph&auml;re. Das wird dir mehr nutzen als zu versuchen den Fingerabdruck deines Browsers zu manipulieren.</p>
 
-<h3>Related Information</h3>
+<h3>weitere Information</h3>
 <ul>
-	<li><a href="https://panopticlick.eff.org/browser-uniqueness.pdf" target="_blank">How Unique Is Your Web Browser? Peter Eckersley, EFF.</a></li>
-	<li><a href="https://www.reddit.com/r/privacytoolsIO/comments/35pqyl/new_section_browser_fingerprint_is_your_browser/" target="_blank">Join our discussion on reddit.com about browser finterprinting.</a></li>
-	<li><a href="#addons">Our Firefox privacy addons section.</a></li>
-	<li><a href="https://www.browserleaks.com/" target="_blank">BrowserLeaks.com</a> - Web browser security testing tools, that tell you what exactly personal identity data may be leaked without any permissions when you surf the Internet.</li>
+	<li><a href="https://panopticlick.eff.org/browser-uniqueness.pdf" target="_blank">How Unique Is Your Web Browser? Peter Eckersley, Electronic Frontier Foundation.</a></li>
+	<li><a href="https://www.reddit.com/r/privacytoolsIO/comments/35pqyl/new_section_browser_fingerprint_is_your_browser/" target="_blank">Eine Diskussion auf reddit.com &uuml;ber Browserfingerprinting.</a></li>
+	<li><a href="#addons">Firefox Privatsph&auml;re AddOns.</a></li>
+	<li><a href="https://www.browserleaks.com/" target="_blank">BrowserLeaks.com</a> - Webbrowser Sicherheitstest, sagt dir welche pers&ouml;nlichen Daten ungefragt von dir erfasst werden, wenn du dich im Internet bewegst.</li>
 </ul>
 
 
 <a class="anchor" name="webrtc"></a>
 <div class="page-header">
-<h1>WebRTC IP Leak Test - Is your IP address leaking?</h1>
+<h1>WebRTC IP L&uuml;cke - Wird deine IP verraten?</h1>
 </div>
 <div class="alert alert-danger" role="alert">
-<strong>WebRTC is a new communication protocol that relies on JavaScript that can leak your actual IP address from behind your VPN.</strong>
+<strong>WebRTC ist ein Kommunikationsprotokoll basierend auf JavaScript und kann deine aktuelle IP Adresse hinter einem VPN offenlegen.</strong>
 </div>
-<p>While software like NoScript prevents this, it's probably a good idea to block this protocol directly as well, just to be safe.</p>
-<p><a href="webrtc.html" target="_blank"><button type="button" class="btn btn-warning">Test your Browser now</button></a></p>
-<h3>How to disable WebRTC in Firefox?</h3>
-<p>In short: Set "media.peerconnection.enabled" to "false" in "about:config".</p>
-<p><strong>Explained:</strong></p>
+<p>Auch wenn Software wie NoScript dies verhindern kann ist es gegebenefalls keine schlechte Idee das Protokoll direkt zu blockieren.</p>
+<p><a href="webrtc.html" target="_blank"><button type="button" class="btn btn-warning">Teste deinen Browser jetzt</button></a></p>
+<h3>Wie kann ich WebRTC im Firefox abschalten?</h3>
+<p>Kurz und knapp: Setze "media.peerconnection.enabled" auf "false" in der "about:config".
+<br><strong>Oder:</strong> Ich empfehle hier das Firefox AddOn <a href="https://addons.mozilla.org/de/firefox/addon/statutory/">Statutory</a>!</p>
+<p><strong>Erkl&auml;rung zum manuellen Abschalten:</strong></p>
 <ol>
-<li>Enter "about:config" in the firefox address bar and press enter.</li>
-<li>Press the button "I'll be careful, I promise!"</li>
-<li>Search for "media.peerconnection.enabled"</li>
-<li>Double click the entry, the column "Value" should now be "false"</li>
-<li>Done. Do the WebRTC leak test again.</li>
+<li>Gib "about:config" in der Firefox Adressleiste ein und dr&uuml;cke Enter.</li>
+<li>Best&auml;tige "Ich werde vorsichtig sein, versprochen!" mit einem Klick darauf</li>
+<li>Suche nach "media.peerconnection.enabled"</li>
+<li>Doppelklicke darauf und der "Wert" sollte nun auf "false" stehen</li>
+<li>Super. Mach den WebRTC Test gleich nochmal.</li>
 </ol>
-<p>If you want to make sure every single WebRTC related setting is really disabled change these settings:</p>
+<p>Wenn du sicher gehen willst, dass jede WebRTC bezogene Funktion deaktiviert ist musst du folgende Einstellungen &auml;ndern:</p>
 <ol>
 <li>media.peerconnection.turn.disable = true</li>
 <li>media.peerconnection.use_document_iceservers = false</li>
 <li>media.peerconnection.video.enabled = false</li>
 <li>media.peerconnection.identity.timeout = 1</li>
 </ol>
-<p>Now you can be 100% sure WebRTC is disabled.</p>
-<p><a href="webrtc.html" target="_blank"><button type="button" class="btn btn-primary">Test your Browser again</button></a></p>
-<h3>How to fix the WebRTC Leak in Google Chrome?</h3>
-<p>There is no known working solution, only a plugin that is easily circumvented. Please use Firefox instead. </p>
-<h3>What about other browsers?</h3>
+<p>Nun kannst du 100% sicher sein, dass WebRTC deaktiviert wurde.</p>
+<p><a href="webrtc.html" target="_blank"><button type="button" class="btn btn-primary">Teste deinen Browser erneut</button></a></p>
+<h3>Und wie kann ich WebRTC im Google Chrome deaktivieren?</h3>
+<p>Daf&uuml;r gibt es noch keine bekannte L&ouml;sung, nur ein Plugin, welches aber einfach umgangen werden kann. Benutze einfach Firefox stattdessen. </p>
+<h3>Was ist mit anderen Browsern?</h3>
 <p>
-Chrome on iOS, Internet Explorer and Safari does not implement WebRTC yet. <a href="#browser">But we recommend using Firefox on all devices.</a>
+Chrome auf iOS, Internet Explorer und Safari haben WebRTC noch nicht implementiert. <a href="#browser">Allerdings kann man wirklich nur empfehlen Firefox auf jedem Ger&auml;t zu verwenden.</a>
 </p>
 
 
 <a class="anchor" name="addons"></a>
 <div class="page-header">
-<h1>Excellent Firefox Privacy Addons</h1>
+<h1>Exzellente Firefox AddOns</h1>
 </div>
 <div class="alert alert-success" role="alert">
-<strong>Improve your privacy with these excellent Firefox addons.</strong>
+<strong>Verbessere deinen Datenschutz und Privatsph&auml;re mit diesen exzellenten Firefox AddOns.</strong>
 </div>
 
-<h3>Stop tracking with "Disconnect"</h3>
-
-<!--
+<h3>PrivacyBadger gegen Werbenetzwerke</h3>
 <img src="img/addons/Privacy-Badger.gif" class="img-responsive pull-left" alt="Privacy Badger" style="margin-right:30px;">
-<p><strong>Privacy Badger</strong> is a browser add-on that stops advertisers and other third-party trackers from secretly tracking where you go and what pages you look at on the web. Privacy Badger automatically blocks that advertiser from loading any more content in your browser.
+<p><strong>Privacy Badger</strong> ist ein Browser AddOn das Werbenetzwerke und andere Drittanbieter die dich heimlich ausspionieren, welche Seiten du gerade besuchst und bereits besucht hast, blockt. PrivacyBadger blockiert automatisch das laden weiterer Daten aus und in Werbenetzen.
 <br />
-<a href="https://addons.mozilla.org/en-US/firefox/addon/privacy-badger-firefox/" target="_blank">https://addons.mozilla.org/en-US/firefox/addon/privacy-badger-firefox/</a></p>
-<br />
--->
-
-<img src="img/addons/Disconnect.gif" class="img-responsive pull-left" alt="Disconnect" style="margin-right:30px;">
-<p><strong>Disconnect</strong> was founded in 2011 by former Google engineers and a consumer-and privacy-rights attorney. The addon is open source and loads the pages you go to 27% faster and stops tracking by 2,000+ third-party sites. It also keeps your searches private.
-<br />
-<a href="https://addons.mozilla.org/en-US/firefox/addon/disconnect/" target="_blank">https://addons.mozilla.org/en-US/firefox/addon/disconnect/</a></p>
-
-<h3>Block Ads with "uBlock Origin"</h3>
-<img src="img/addons/uBlock.gif" class="img-responsive pull-left" alt="uBlock" style="margin-right:30px;">
-<p><strong>uBlock Origin</strong> is an lightweight and efficient blocker: easy on memory and CPU footprint. The extension has no monetization strategy and development is volunteered. OS: Firefox, Safari, Opera, Chromium. AdBlock Plus is not recommended because they show "acceptable ads". The system behind that white list is lacking transparency.
-<br />
-<a href="https://addons.mozilla.org/en/firefox/addon/ublock-origin/" target="_blank">https://addons.mozilla.org/en/firefox/addon/ublock-origin/</a>
+<a href="https://addons.mozilla.org/de/firefox/addon/privacy-badger-firefox/" target="_blank">https://addons.mozilla.org/de/firefox/addon/privacy-badger-firefox/</a>
 </p>
+<br />
 
+<h3>"Dolus" verbirgt deine IP im X-Forward Header</h3>
+<img src="img/addons/Dolus.gif" class="img-responsive pull-left" alt="Dolus" style="margin-right:30px;">
+<p><strong>Dolus</strong> versteckt deine echte IP vor Webseiten durch das Senden von X-Forwarded-For-Header mit gef&auml;lschten IP-Adressen. Der X-Forwarded-For-Request-Header wird von Proxies verwendet, um Web-Servern mitzuteilen welche IP-Adressen sie an die Seite weiterleiten.
+<br />
+<a href="https://addons.mozilla.org/de/firefox/addon/dolus/" target="_blank">https://addons.mozilla.org/de/firefox/addon/dolus/</a>
+</p>
+<br />
 
-<h3>Hinder Browser Fingerprinting with "Random Agent Spoofer"</h3>
+<h3>Gegen WebRTC mit "Statutory"</h3>
+<img src="img/addons/Statutory.gif" class="img-responsive pull-left" alt="Dolus" style="margin-right:30px;">
+<p><strong>Statutory</strong> sch&uuml;tzt dich zuverl&auml;ssig gegen die WebRTC "L&uuml;cke" und versteckt deine echte IP.
+<br />
+<a href="https://addons.mozilla.org/de/firefox/addon/statutory/" target="_blank">https://addons.mozilla.org/de/firefox/addon/statutory/</a>
+</p>
+<br />
+
+<h3>Stoppe die Verfolgung mit "Disconnect"</h3>
+<img src="img/addons/Disconnect.gif" class="img-responsive pull-left" alt="Disconnect" style="margin-right:30px;">
+<p><strong>Disconnect</strong> wurde 2011 von 2 ehemaligen Google Entwicklern und anderen Leuten gegr&uuml;ndet. Das AddOn ist quelloffen und deine besuchten Webseiten etwa 27% schneller. Auch wird das Tracking von &uuml;ber 2,000 Drittanbieterseiten geblockt. Suchanfragen werden auch anonymisiert.
+<br />
+<a href="https://addons.mozilla.org/de/firefox/addon/disconnect/" target="_blank">https://addons.mozilla.org/de/firefox/addon/disconnect/</a>
+</p>
+<br />
+
+<h3>Werbung blocken mit "uBlock Origin"</h3>
+<img src="img/addons/uBlock.gif" class="img-responsive pull-left" alt="uBlock" style="margin-right:30px;">
+<p><strong>uBlock Origin</strong> Ein effizienter Blocker: Geringer Speicherbedarf und niedrige CPU-Belastung - und dennoch werden Tausende an Filtern mehr angewendet als bei anderen popul&auml;ren Blockern. AdBlock Plus wird nicht empfohlen, da dort "gute Werbung" angezeigt wird und das System dahinter ist nicht sehr transparent.
+<br />
+<a href="https://addons.mozilla.org/de/firefox/addon/ublock-origin/" target="_blank">https://addons.mozilla.org/de/firefox/addon/ublock-origin/</a>
+</p>
+<br />
+
+<h3>erschwere den Browser Fingerabdruck mit "Random Agent Spoofer"</h3>
 <img src="img/addons/Random-Agent-Spoofer.gif" class="img-responsive pull-left" alt="Random Agent Spoofer" style="margin-right:30px;">
-<p>Random Agent Spoofer is a privacy enhancing firefox addon which aims to hinder browser fingerprinting. It does this by changing the browser/device profile on a timer.
+<p><strong>Random Agenten Spoofer</strong> ist ein datenschutzfreundliches Firefox AddOn, das Browser-Fingerprinting behindern soll. Dies geschieht durch &Auml;ndern des Browser / Ger&auml;teprofils nach einem Timer.
 <br />
-<a href="https://addons.mozilla.org/en-US/firefox/addon/random-agent-spoofer/" target="_blank">https://addons.mozilla.org/en-US/firefox/addon/random-agent-spoofer/</a></p>
+<a href="https://addons.mozilla.org/de/firefox/addon/random-agent-spoofer/" target="_blank">https://addons.mozilla.org/de/firefox/addon/random-agent-spoofer/</a>
+</p>
+<br />
 
-<h3>Automatically Delete Cookies with "Self-Destructing Cookies"</h3>
+<h3>"Self-Destructing Cookies" - Cookies automatisch l&ouml;schen</h3>
 <img src="img/addons/Self-Destructing-Cookies.gif" class="img-responsive pull-left" alt="Self-Destructing Cookies" style="margin-right:30px;">
-<p>Self-Destructing Cookies automatically removes cookies when they are no longer used by open browser tabs. With the cookies, lingering sessions, as well as information used to spy on you, will be expunged. <br />
-<a href="https://addons.mozilla.org/en-US/firefox/addon/self-destructing-cookies/" target="_blank">https://addons.mozilla.org/en-US/firefox/addon/self-destructing-cookies/</a></p>
-
-
-<h3>Encryption with "HTTPS Everywhere"</h3>
-<img src="img/addons/HTTPS-Everywhere.gif" class="img-responsive pull-left" alt="HTTPS Everywhere" style="margin-right:30px;">
-<p>HTTPS Everywhere is a Firefox, Chrome, and Opera extension that encrypts your communications with many major websites, making your browsing more secure. A collaboration between The Tor Project and the Electronic Frontier Foundation.
+<p><strong>Self-Destructing Cookies</strong> entfernt automatisch Cookies, wenn sie nicht mehr vom offenen Browser-Tabs verwendet werden. (dauerhafte) Cookies sowie Informationen die benutzt werden, um dich auszuspionieren, werden ausgel&ouml;scht. 
 <br />
-<a href="https://www.eff.org/https-everywhere" target="_blank">https://www.eff.org/https-everywhere</a></p>
+<a href="https://addons.mozilla.org/de/firefox/addon/self-destructing-cookies/" target="_blank">https://addons.mozilla.org/de/firefox/addon/self-destructing-cookies/</a>
+</p>
+<br />
+
+<h3>Immer verschl&uuml;sseln mit "HTTPS Everywhere"</h3>
+<img src="img/addons/HTTPS-Everywhere.gif" class="img-responsive pull-left" alt="HTTPS Everywhere" style="margin-right:30px;">
+<p><strong>HTTPS Everywhere</strong> ist eine Firefox, Chrome und Opera Erweiterung, die deine Kommunikation mit vielen gro&szlig;en Websites verschl&uuml;sselt, so dass du sicherer surfst. Eine Zusammenarbeit zwischen "The Tor Project" und der "Electronic Frontier Foundation".
+<br />
+<a href="https://www.eff.org/https-everywhere" target="_blank">https://www.eff.org/https-everywhere</a>
+</p>
 
 <br>
 
 <div class="alert alert-warning" role="alert">
-<strong>The following addons require quite a lot of interaction from user to get things working. Some sites will not work properly until you have configured the addons.</strong>
+<strong>Die folgenden AddOns ben&ouml;tigen einiges an Arbeit, denn manche Seiten werden nicht ordentlich funktionieren wenn die AddOns nicht "eingestellt" wurden.</strong>
 </div>
 <!--
 <h3>Stop cross-site requests with "Request Policy"</h3>
@@ -728,89 +768,89 @@ Chrome on iOS, Internet Explorer and Safari does not implement WebRTC yet. <a hr
 <a href="https://requestpolicycontinued.github.io/" target="_blank">https://requestpolicycontinued.github.io/</a>
 </p>
 -->
-<h3>Be in total control with "NoScript Security Suite"</h3>
+<h3>Hol dir die absolute Kontrolle zur&uuml;ck mit "NoScript Security Suite"</h3>
 <img src="img/addons/NoScript.gif" class="img-responsive pull-left" alt="NoScript" style="margin-right:30px;">
 <p>
-Highly customizable plugin to selectively allow Javascript, Java, and Flash to run only on websites you trust. Not for casual users, it requires technical knowledge to configure.
+Sehr anpassbares Plugin um selektiv Javascript, Java und Flash auf vertrauensw&uuml;rdigen Seiten zu erlauben. Nicht f&uuml;r den Normal- oder Gelegenheitsnutzer, da es gutes technisches Hintergrundwissen voraussetzt.
 <br />
-<a href="https://addons.mozilla.org/en-US/firefox/addon/noscript/" target="_blank">https://addons.mozilla.org/en-US/firefox/addon/noscript/</a>
+<a href="https://addons.mozilla.org/de/firefox/addon/noscript/" target="_blank">https://addons.mozilla.org/de/firefox/addon/noscript/</a>
 </p>
-<h3>Content control with "Policeman"</h3>
+<h3>inhaltliche Kontrolle mit "Policeman"</h3>
 <img src="img/addons/Policeman.gif" class="img-responsive pull-left" alt="Policeman" style="margin-right:30px;">
-<p>This addon has purpose similar to RequestPolicy and NoScript. It's different from the former in that it supports rules based on content type. For example, you can allow images and styles, but not scripts and frames for some sites. It can also be set up to act as a blacklist.
+<p>Dieses AddOn funktioniert &auml;hnlich wie RequestPolicy und NoScript. Es unterscheidet sich dahingehend, dass Regels&auml;tze nach Inhaltstyp erstellt werden k&ouml;nnen. Zum Beispiel kann man Bilder erlauben aber keine Scripte oder eingebette Frames. Kann auch als Blacklist eingesetzt werden.
 <br />
-<a href="https://addons.mozilla.org/en-US/firefox/addon/policeman/" target="_blank">https://addons.mozilla.org/en-US/firefox/addon/policeman/</a>
+<a href="https://addons.mozilla.org/de/firefox/addon/policeman/" target="_blank">https://addons.mozilla.org/de/firefox/addon/policeman/</a>
 </p>
 
 
 <a class="anchor" name="about_config"></a>
 <div class="page-header">
-<h1>Firefox: Privacy Related "about:config" Tweaks</h1>
+<h1>Firefox: Einstellungen zum Datenschutz in der "about:config"</h1>
 </div>
 <div class="alert alert-success" role="alert">
-This is a collection of privacy related <strong>about:config</strong> tweaks. We'll show you how to enhance the privacy of your Firefox browser.
+Das ist eine Auswahl an <strong>about:config</strong> Einstellungen. Hier zeige ich dir, wie du deinen Browser sicherer machst.
 </div>
 
-<p></p><h3>Preparation:</h3><p></p>
+<p></p><h3>Vorbereitung:</h3><p></p>
 
 <ol>
-<li>Enter "about:config" in the firefox address bar and press enter.</li>
-<li>Press the button "I'll be careful, I promise!"</li>
-<li>Follow the instructions below...</li>
+<li>Gib "about:config" in die Firefox Adressleiste ein und dr&uuml;cke Enter.</li>
+<li>Best&auml;tige "Ich werde vorsichtig sein, versprochen!"</li>
+<li>Folge den unten stehenden Anweisungen...</li>
 </ol>
 
-<p></p><h3>Getting started:</h3><p></p>
+<p></p><h3>Fangen wir an:</h3><p></p>
 
 <ol>
 <li>privacy.trackingprotection.enabled = true</li>
-<ul><li>This is Mozilla’s new built in tracking protection.</li></ul>
+<ul><li>Das ist der neue Trackingschutz von Mozilla.</li></ul>
 
 <li>geo.enabled = false</li>
-<ul><li>Disables geolocation.</li></ul>
+<ul><li>Deaktiviert Geolocation (zBsp Ortung per IP).</li></ul>
 
 <li>browser.safebrowsing.enabled = false</li>
-<ul><li>Disable Google Safe Browsing and phishing protection. Security risk, but privacy improvement.</li></ul>
+<ul><li>Deaktiviert Googles Safe Browsing und Phishingschutz. Sicherheitsrisiko aber erh&ouml;ht Datenschutz.</li></ul>
 
 <li>browser.safebrowsing.malware.enabled = false</li>
-<ul><li>Disable Google Safe Browsing malware checks. Security risk, but privacy improvement.</li></ul>
+<ul><li>Deaktiviert Googles Safe Browsing und Schadware Pr&uuml;fung. Sicherheitsrisiko aber erh&ouml;ht Datenschutz.</li></ul>
 
 <li>dom.event.clipboardevents.enabled = false</li>
-<ul><li>Disable that websites can get notifications if you copy, paste, or cut something from a web page, and it lets them know which part of the page had been selected.</li></ul>
+<ul><li>Deaktiviert die Funktion, dass Webseiten dar&uuml;ber informiert werden wenn man etwas kopiert, einf&uuml;gt oder ausschneidet und wo auf der Webseite man das tut.</li></ul>
 
 <li>network.cookie.cookieBehavior = 1</li>
 <ul>
-<li>Disable cookies</li>
-<li>0 = accept all cookies by default</li>
-<li>1 = only accept from the originating site (block third party cookies)</li>
-<li>2 = block all cookies by default</li>
+<li>Cookies deaktivieren</li>
+<li>0 = Akzeptiert alle Cookies</li>
+<li>1 = Akzeptiert nur Cookies der aufgerufenen Seite (blockt Drittanbieter Cookies)</li>
+<li>2 = Blockt alle Cookies</li>
 </ul>
 
 <li>network.cookie.lifetimePolicy = 2</li>
 <ul>
-<li>cookies are deleted at the end of the session</li>
-<li>0 = Accept cookies normally</li>
-<li>1 = Prompt for each cookie</li>
-<li>2 = Accept for current session only</li>
-<li>3 = Accept for N days</li>
+<li>Cookies werden beim Beenden der Sitzung gel&ouml;scht</li>
+<li>0 = Akzeptiert jeden Cookie</li>
+<li>1 = Fragt bei jedem Cookie nach</li>
+<li>2 = Nur f&uuml;r die aktuelle Sitzung</li>
+<li>3 = Akzeptiert f&uuml;r "N" Tage</li>
 </ul>
 
 <li>browser.cache.offline.enable = false</li>
-<ul><li>Disables offline cache.</li></ul>
+<ul><li>Deaktiviert Offline Zwischenspeicher.</li></ul>
 
 <li>browser.send_pings = false</li>
-<ul><li>The attribute would be useful for letting websites track visitors’ clicks. </li></ul>
+<ul><li>Die Funktion w&uuml;rde genutzt werden, um die Klicks der Besucher einer Webseite zu verfolgen. </li></ul>
 
 <li>webgl.disabled = true</li>
-<ul><li>WebGL is a potential security risk. <a href="http://security.stackexchange.com/questions/13799/is-webgl-a-security-concern" target="_blank">Source</a></li></ul>
+<ul><li>WebGL ist ein potenzielles Sicherheitsrisiko. <a href="http://security.stackexchange.com/questions/13799/is-webgl-a-security-concern" target="_blank">Quelle</a></li></ul>
 
 <li>dom.battery.enabled = false</li>
-<ul><li>Website owners can track the battery status of your device. <a href="https://www.reddit.com/r/privacytoolsIO/comments/3fzbgy/you_may_be_tracked_by_your_battery_status_of_your/" target="_blank">Source</a></li></ul>
+<ul><li>Webseitenbetreiber k&ouml;nnten damit den Batteriestatus der Notebooks / Smartphones von Besuchern der Seite abfragen. <a href="https://www.reddit.com/r/privacytoolsIO/comments/3fzbgy/you_may_be_tracked_by_your_battery_status_of_your/" target="_blank">Quelle</a></li></ul>
 
 <li>browser.sessionstore.max_tabs_undo = 0</li>
-<ul><li>Even with Firefox set to not remember history, your closed tabs are stored temporarily at Menu -> History -> Recently Closed Tabs.</li></ul>
+<ul><li>Auch wenn Firefox so eingestellt ist den Verlauf nicht zu speichern w&uuml;rden deine geschlossenen Tabs erst einmal zwischengespeichert werden.</li></ul>
 </ol>
 
-<h3>Related Information</h3>
+<h3>Weitere Informationen</h3>
 <ul>
 <li><a href="http://kb.mozillazine.org/Category:Security_and_privacy-related_preferences" target="_blank">mozillazine.org</a> - Security and privacy-related preferences. </li>
 <li><a href="https://github.com/pyllyukko/user.js" target="_blank">user.js Firefox hardening stuff</a> - This is a user.js configuration file for Mozilla Firefox that's supposed to harden Firefox's settings and make it more secure.</li>
@@ -818,10 +858,10 @@ This is a collection of privacy related <strong>about:config</strong> tweaks. We
 
 <a class="anchor" name="email"></a>
 <div class="page-header">
-<h1>Privacy-Conscious Email Providers - No Affiliates</h1>
+<h1>Empfehlenswerte E-Mail-Anbieter</h1>
 </div>
 <div class="alert alert-success" role="alert">
-<strong>All providers listed here are operating outside the US and support <a data-toggle="tooltip" data-placement="bottom" data-original-title="When sending or receiving emails, if both the sending and receiving servers support TLS encryption, the email is sent between servers using an encrypted connection.">SMTP TLS.</a> The table is sortable. Never trust any company with your privacy, always encrypt.</strong>
+<strong>Alle hier gelisteten Anbieter sind au&szlig;erhalb der USA und unterst&uuml;tzen <a data-toggle="tooltip" data-placement="bottom" data-original-title="Wenn eine Email verschickt wird und sowohl der versendende als auch der empfangende Server TLS Verschl&uuml;sselung unterst&uuml;tzen wird die Mail &uuml;ber eine verschl&uuml;sselte Verbindung &uuml;bertragen.">SMTP TLS.</a> Tabelle sortierbar. Vertraue nie einer Firma deine Daten an, verschl&uuml;ssele immer.</strong>
 </div>
 
 <br>
@@ -829,175 +869,162 @@ This is a collection of privacy related <strong>about:config</strong> tweaks. We
 <table class="sortable-theme-bootstrap" data-sortable>
 <thead>
 <tr>
-<th data-sortable="true">Email Service</th>
-<th data-sortable="true">Since</th>
+<th data-sortable="true">Email Anbieter</th>
+<th data-sortable="true">Existiert seit</th>
 <th data-sortable="true">Server</th>
-<th data-sortable="true">Storage</th>
-<th data-sortable="true">Price / Year</th>
+<th data-sortable="true">Speicher</th>
+<th data-sortable="true">Preis pro Jahr</th>
 <th data-sortable="true">Bitcoin</th>
-<th data-sortable="true">Encryption</th>
-<th data-sortable="true">Own Domain</th>
+<th data-sortable="true">Verschl&uuml;sselung</th>
+<th data-sortable="true">eigene Domain m&ouml;glich?</th>
 </tr>
 </thead>
 
 <tbody>
 
 <tr>
-<td data-value="GhostMail"><a href="https://www.ghostmail.com/" target="_blank"><img src="img/provider/GhostMail.gif" width="200" height="70"><br />GhostMail.com</a></td>
+<td data-value="GhostMail"><a href="https://www.ghostmail.com/" target="_blank"><img src="img/provider/GhostMail.gif" width="200" height="70"><br />GhostMail</a></td>
 <td data-value="2015">2015</td>
-<td>Sweden</td>
+<td>Schweden</td>
 <td data-value="1000">1 GB</td>
-<td data-value="0"><span class="label label-warning">Free</span></td>
-<td><span class="label label-success">Accepted</span></td>
-<td><span class="label label-success">Built-in</span></td>
-<td><span class="label label-primary">No</span></td>
+<td data-value="0"><span class="label label-warning">kostenlos</span></td>
+<td><span class="label label-success">ja</span></td>
+<td><span class="label label-success">integriert</span></td>
+<td><span class="label label-primary">nein</span></td>
 </tr>
 
 <tr>
-<td data-value="OpenMailBox"><a href="https://www.openmailbox.org/" target="_blank"><img src="img/provider/OpenMailBox.gif" width="200" height="70"><br />OpenMailBox.org</a></td>
+<td data-value="OpenMailBox"><a href="https://www.openmailbox.org/" target="_blank"><img src="img/provider/OpenMailBox.gif" width="200" height="70"><br />OpenMailBox</a></td>
 <td data-value="2013">2013</td>
-<td>France</td>
+<td>Frankreich</td>
 <td data-value="1000">1 GB</td>
-<td data-value="0"><span class="label label-warning">Free</span></td>
-<td><span class="label label-success">Accepted</span></td>
-<td><span class="label label-success">Built-in</span></td>
-<td><span class="label label-primary">No</span></td>
+<td data-value="0"><span class="label label-warning">kostenlos</span></td>
+<td><span class="label label-success">ja</span></td>
+<td><span class="label label-success">integriert</span></td>
+<td><span class="label label-primary">nein</span></td>
 </tr>
 
 <tr>
-<td data-value="ProtonMail"><a href="https://www.protonmail.ch/" target="_blank"><img src="img/provider/ProtonMail.ch.gif" width="200" height="70"><br />ProtonMail.ch</a></td>
+<td data-value="ProtonMail"><a href="https://www.protonmail.ch/" target="_blank"><img src="img/provider/ProtonMail.ch.gif" width="200" height="70"><br />ProtonMail</a></td>
 <td data-value="2013">2013</td>
-<td>Switzerland</td>
+<td>Schweiz</td>
 <td data-value="500">500 MB</td>
-<td data-value="0"><span class="label label-warning">Free</span></td>
-<td><span class="label label-success">Accepted</span></td>
-<td><span class="label label-success">Built-in</span></td>
-<td><span class="label label-primary">No</span></td>
+<td data-value="0"><span class="label label-warning">kostenlos</span></td>
+<td><span class="label label-success">ja</span></td>
+<td><span class="label label-success">integriert</span></td>
+<td><span class="label label-primary">nein</span></td>
 </tr>
 
-<!-- removed ruggedinbox: ssl certificate expired
 <tr>
-<td data-value="RuggedInbox"><a href="https://ruggedinbox.com/" target="_blank"><img src="img/provider/RuggedInbox.gif" width="200" height="70"><br />RuggedInbox.com</a></td>
-<td data-value="2014">2014</td>
-<td>Bulgaria</td>
-<td data-value="200">200 MB</td>
-<td data-value="0"><span class="label label-warning">Free</span></td>
-<td><span class="label label-success">Accepted</span></td>
-<td><span class="label label-primary">No</span></td>
-<td><span class="label label-primary">No</span></td>
-</tr>
--->
-
-<tr>
-<td data-value="Tutanota"><a href="https://www.tutanota.com/" target="_blank"><img src="img/provider/Tutanota.gif" width="200" height="70"><br />Tutanota.com</a></td>
+<td data-value="Tutanota"><a href="https://www.tutanota.com/" target="_blank"><img src="img/provider/Tutanota.gif" width="200" height="70"><br />Tutanota</a></td>
 <td data-value="2011">2011</td>
-<td>Germany</td>
+<td>Deutschland</td>
 <td data-value="1000">1 GB</td>
-<td data-value="0"><span class="label label-warning">Free</span></td>
-<td><span class="label label-success">Accepted</span></td>
-<td><span class="label label-success">Built-in</span></td>
-<td><span class="label label-success">Yes</span></td>
+<td data-value="0"><span class="label label-warning">kostenlos</span></td>
+<td><span class="label label-success">ja</span></td>
+<td><span class="label label-success">integriert</span></td>
+<td><span class="label label-success">ja</span></td>
 </tr>
 
 <tr>
-<td data-value="Whiteout-Mail"><a href="https://whiteout.io/" target="_blank"><img src="img/provider/Whiteout-Mail.gif" width="200" height="70"><br />whiteout.io</a></td>
+<td data-value="Whiteout-Mail"><a href="https://whiteout.io/" target="_blank"><img src="img/provider/Whiteout-Mail.gif" width="200" height="70"><br />Whiteout.io</a></td>
 <td data-value="2014">2014</td>
-<td>Germany</td>
+<td>Deutschland</td>
 <td data-value="2000">2 GB</td>
-<td data-value="0"><span class="label label-warning">Free</span></td>
-<td><span class="label label-primary">No</span></td>
-<td><span class="label label-success">Built-in</span></td>
-<td><span class="label label-primary">No</span></td>
+<td data-value="0"><span class="label label-warning">kostenlos</span></td>
+<td><span class="label label-primary">nein</span></td>
+<td><span class="label label-success">integriert</span></td>
+<td><span class="label label-primary">nein</span></td>
 </tr>
 
 <tr>
 <tr>
-<td data-value="mailbox.org"><a href="https://www.mailbox.org/" target="_blank"><img src="img/provider/mailbox.org.gif" width="200" height="70"><br />mailbox.org</a></td>
+<td data-value="mailbox.org"><a href="https://www.mailbox.org/" target="_blank"><img src="img/provider/mailbox.org.gif" width="200" height="70"><br />Mailbox.org</a></td>
 <td data-value="2014">2014</td>
-<td>Germany</td>
+<td>Deutschland</td>
 <td data-value="2000">2 GB</td>
-<td>12 €</td>
-<td><span class="label label-success">Accepted</span></td>
-<td><span class="label label-success">Built-in</span></td>
-<td><span class="label label-success">Yes</span></td>
+<td>12 &euro;</td>
+<td><span class="label label-success">ja</span></td>
+<td><span class="label label-success">integriert</span></td>
+<td><span class="label label-success">ja</span></td>
 </tr>
 
 <tr>
 <tr>
-<td data-value="Posteo"><a href="https://www.posteo.de/" target="_blank"><img src="img/provider/Posteo.gif" width="200" height="70"><br />Posteo.de</a></td>
+<td data-value="Posteo"><a href="https://www.posteo.de/" target="_blank"><img src="img/provider/Posteo.gif" width="200" height="70"><br />Posteo</a></td>
 <td data-value="2009">2009</td>
-<td>Germany</td>
+<td>Deutschland</td>
 <td data-value="2000">2 GB</td>
-<td>12 €</td>
-<td><span class="label label-primary">No</span></td>
-<td><span class="label label-success">Built-in</span></td>
-<td><span class="label label-primary">No</span></td>
+<td>12 &euro;</td>
+<td><span class="label label-primary">nein</span></td>
+<td><span class="label label-success">integriert</span></td>
+<td><span class="label label-primary">nein</span></td>
 </tr>
 
 <tr>
-<td data-value="Runbox"><a href="https://runbox.com/" target="_blank"><img src="img/provider/runbox.gif" width="200" height="70"><br />Runbox.com</a></td>
+<td data-value="Runbox"><a href="https://runbox.com/" target="_blank"><img src="img/provider/runbox.gif" width="200" height="70"><br />Runbox</a></td>
 <td data-value="1999">1999</td>
-<td>Norway</td>
+<td>Norwegen</td>
 <td data-value="1000">1 GB</td>
 <td>$ 19.95</td>
-<td><span class="label label-primary">No</span></td>
-<td><span class="label label-primary">No</span></td>
-<td><span class="label label-success">Yes</span></td>
+<td><span class="label label-primary">nein</span></td>
+<td><span class="label label-primary">nein</span></td>
+<td><span class="label label-success">ja</span></td>
 </tr>
 
 <tr>
-<td data-value="Neomailbox"><a href="https://www.neomailbox.com/" target="_blank"><img src="img/provider/Neomailbox.gif" width="200" height="70"><br />Neomailbox.com</a></td>
+<td data-value="Neomailbox"><a href="https://www.neomailbox.com/" target="_blank"><img src="img/provider/Neomailbox.gif" width="200" height="70"><br />Neomailbox</a></td>
 <td data-value="2003">2003</td>
-<td>Switzerland</td>
+<td>Schweiz</td>
 <td data-value="1000">1 GB</td>
 <td>$ 49.95</td>
-<td><span class="label label-success">Accepted</span></td>
-<td><span class="label label-success">Built-in</span></td>
-<td><span class="label label-success">Yes</span></td>
+<td><span class="label label-success">ja</span></td>
+<td><span class="label label-success">integriert</span></td>
+<td><span class="label label-success">ja</span></td>
 </tr>
 
 <tr>
-<td data-value="CounterMail"><a href="https://www.countermail.com/" target="_blank"><img src="img/provider/CounterMail.gif" width="200" height="70"><br />CounterMail.com</a></td>
+<td data-value="CounterMail"><a href="https://www.countermail.com/" target="_blank"><img src="img/provider/CounterMail.gif" width="200" height="70"><br />CounterMail</a></td>
 <td data-value="2010">2010</td>
-<td>Sweden</td>
+<td>Schweden</td>
 <td data-value="500">500 MB</td>
 <td>$ 59</td>
-<td><span class="label label-success">Accepted</span></td>
-<td><span class="label label-success">Built-in</span></td>
-<td><span class="label label-success">Yes</span></td>
+<td><span class="label label-success">ja</span></td>
+<td><span class="label label-success">integriert</span></td>
+<td><span class="label label-success">ja</span></td>
 </tr>
 
 <tr>
-<td data-value="StartMail"><a href="https://www.startmail.com/" target="_blank"><img src="img/provider/StartMail.gif" width="200" height="70"><br />StartMail.com</a></td>
+<td data-value="StartMail"><a href="https://www.startmail.com/" target="_blank"><img src="img/provider/StartMail.gif" width="200" height="70"><br />StartMail</a></td>
 <td data-value="2014">2014</td>
-<td>Netherlands</td>
+<td>Niederlande</td>
 <td data-value="10000">10 GB</td>
 <td>$ 59.95</td>
-<td><span class="label label-primary">No</span></td>
-<td><span class="label label-success">Built-in</span></td>
-<td><span class="label label-primary">No</span></td>
+<td><span class="label label-primary">nein</span></td>
+<td><span class="label label-success">integriert</span></td>
+<td><span class="label label-primary">nein</span></td>
 </tr>
 
 <tr>
-<td data-value="Kolab Now"><a href="https://www.kolabnow.com/" target="_blank"><img src="img/provider/Kolab-Now.gif" width="200" height="70"><br />KolabNow.com</a></td>
+<td data-value="Kolab Now"><a href="https://www.kolabnow.com/" target="_blank"><img src="img/provider/Kolab-Now.gif" width="200" height="70"><br />KolabNow</a></td>
 <td data-value="2010">2010</td>
-<td>Switzerland</td>
+<td>Schweiz</td>
 <td data-value="2048">2 GB</td>
 <td>$ 60</td>
-<td><span class="label label-success">Accepted</span></td>
-<td><span class="label label-primary">No</span></td>
-<td><span class="label label-success">Yes</span></td>
+<td><span class="label label-success">ja</span></td>
+<td><span class="label label-primary">nein</span></td>
+<td><span class="label label-success">ja</span></td>
 </tr>
 
 <tr>
-<td data-value="CryptoHeaven"><a href="http://www.cryptoheaven.com/" target="_blank"><img src="img/provider/CryptoHeaven.gif" width="200" height="70"><br />CryptoHeaven.com</a></td>
+<td data-value="CryptoHeaven"><a href="http://www.cryptoheaven.com/" target="_blank"><img src="img/provider/CryptoHeaven.gif" width="200" height="70"><br />CryptoHeaven</a></td>
 <td data-value="2001">2001</td>
-<td>Canada</td>
+<td>Kanada</td>
 <td data-value="200">200 MB</td>
 <td>$ 66</td>
-<td><span class="label label-primary">No</span></td>
-<td><span class="label label-success">Built-in</span></td>
-<td><span class="label label-success">Yes</span></td>
+<td><span class="label label-primary">nein</span></td>
+<td><span class="label label-success">integriert</span></td>
+<td><span class="label label-success">ja</span></td>
 </tr>
 
 </tbody>
@@ -1005,19 +1032,20 @@ This is a collection of privacy related <strong>about:config</strong> tweaks. We
 
 <br>
 
-<h3>Interesting Email Providers Under Development</h3>
+<h3>Wegwerf Email-Anbieter</h3>
 <ul>
-<li><a href="https://www.confidantmail.org/" target="_blank">Confidant Mail</a> - An open-source non-SMTP cryptographic email system optimized for large file attachments. It is a secure and spam-resistant alternative to regular email and online file drop services. It uses GNU Privacy Guard (GPG) for content encryption and authentication, and TLS 1.2 with ephemeral keys for transport encryption.</li>
+<li><a href="http://www.wegwerfemailadresse.com/" target="_blank">Wegwerfemailadresse.com</a> - Wegwerf-eMail-Adresse ist ein kostenloses System f&uuml;r provisorische E-Mail-Adressen. Wenn du dich irgendwo registrieren und deine richtige Emailadresse nicht angeben m&ouml;chtest, dann kannst du dir hier f&uuml;r 24 Stunden eine tempor&auml;re Adresse generieren.</li>
+<li><a href="http://www.squizzy.de/" target="_blank">Squizzy</a> - Squizzy.de stellt dir tempor&auml;re Wegwerf-E-Mail-Adressen zur Verf&uuml;gung, um dich vor Spam zu sch&uuml;tzen. Die E-Mail-Adresse verf&auml;llt nach 60 Minuten. Du kannst innerhalb des Zeitfensters eingehende E-Mails lesen und darauf antworten.</li>
 </ul>
 
 
-<h3>Become Your Own Email Provider with Mail-in-a-Box</h3>
+<h3>Werde dein eigener Mailanbieter mit einem eigenen Mailserver</h3>
 <a href="https://mailinabox.email/" target="_blank"><img src="img/provider/Mail-in-a-Box.gif" class="img-responsive pull-left" alt="Mail-in-a-Box" style="margin-right:10px;"></a>
 <p>
-Take it a step further and get control of your email with this easy-to-deploy mail server in a box. Mail-in-a-Box lets you become your own mail service provider in a few easy steps. It’s sort of like making your own gmail, but one you control from top to bottom. Technically, Mail-in-a-Box turns a fresh cloud computer into a working mail server. But you don’t need to be a technology expert to set it up. <strong>More: <a href="https://mailinabox.email/" target="_blank">https://mailinabox.email/</a></strong>
+Gehe noch einen Schritt weiter und erhalte die Kontrolle &uuml;ber deine E-Mail mit dem einfach zu implementierenden Mail-Server. Mit Mail-in-a-Box kannst du eigener Mail-Diensteanbieter in ein paar einfachen Schritten werden. Es ist irgendwie wie dein eigenes Gmail, aber mit voller Kontrolle. Technisch macht Mail-In-a-Box einen Cloud Server zum funktionierenden Mail-Server. Aber du musst kein Technologie-Experte sein, um es einzurichten. <strong>Mehr: <a href="https://mailinabox.email/" target="_blank">https://mailinabox.email/</a></strong>
 </p>
 
-<h3>Privacy Email Tools</h3>
+<h3>Email Erweiterungen, die Privatsph&auml;re sch&auml;tzen</h3>
 <ul>
 <li><a href="http://www.gpg4usb.org/" target="_blank">gpg4usb</a> - A very easy to use and small portable editor to encrypt and decrypt any text-message or -file. For Windows and Linux.</li>
 <li><a href="https://www.mailvelope.com/" target="_blank">Mailvelope</a> - A browser extension that enables the exchange of encrypted emails following the OpenPGP encryption standard.</li>
@@ -1026,9 +1054,9 @@ Take it a step further and get control of your email with this easy-to-deploy ma
 <li><a href="https://emailprivacytester.com/" target="_blank">Email Privacy Tester</a> - This tool will sent an Email to your address and perform privacy related tests.</li>
 </ul>
 
-<h3>Related Information</h3>
+<h3>Weitere Informationen</h3>
 <ul>
-<li><a href="http://www.wired.com/2011/10/ecpa-turns-twenty-five/" target="_blank">Aging ‘Privacy’ Law Leaves Cloud E-Mail Open to Cops</a> - Data stored in the cloud for longer than 6 months is considered abandoned and may be accessed by intelligence agencies without a warrant. Learning: Use an external email client like Thunderbird or Enigmail, download your emails and store them locally. Never leave them on the server.</li>
+<li><a href="http://www.wired.com/2011/10/ecpa-turns-twenty-five/" target="_blank">Aging â€˜Privacyâ€™ Law Leaves Cloud E-Mail Open to Cops</a> - Data stored in the cloud for longer than 6 months is considered abandoned and may be accessed by intelligence agencies without a warrant. Learning: Use an external email client like Thunderbird or Enigmail, download your emails and store them locally. Never leave them on the server.</li>
 <li><a href="https://www.openmailbox.org/forum/viewtopic.php?id=390" target="_blank">OpenMailBox keeps one year logs of meta-data</a> - Forum discussion, reply of the server admin.</li>
 <li><a href="https://www.eff.org/deeplinks/2012/04/may-firstriseup-server-seizure-fbi-overreaches-yet-again" target="_blank">With May First/Riseup Server Seizure, FBI Overreaches Yet Again</a></li>
 <li><a href="http://www.autistici.org/ai/crackdown/" target="_blank">Autistici/Inventati server compromised</a> -  The cryptographic services offered by the Autistici/Inventati server have been compromised on 15th June 2004. It was discovered on 21st June 2005. One year later. During an enquiry on a single mailbox, the Postal Police may have tapped for a whole year every user's private communication going through the server autistici.org/inventati.org.</li>
@@ -1036,7 +1064,7 @@ Take it a step further and get control of your email with this easy-to-deploy ma
 
 <a class="anchor" name="clients"></a>
 <div class="page-header">
-<h1>Email Clients</h1>
+<h1>Email Client Software</h1>
 </div>
 <div class="row">
 
@@ -1046,8 +1074,8 @@ Take it a step further and get control of your email with this easy-to-deploy ma
 <h3 class="panel-title">Thunderbird</h3>
 </div>
 <div class="panel-body">
-<p><img src="img/tools/Thunderbird.png" alt="Thunderbird" align="right" style="margin-left:5px;">Mozilla Thunderbird is a free, open source, cross-platform email, news, and chat client developed by the Mozilla Foundation. Thunderbird is an email, newsgroup, news feed, and chat (XMPP, IRC, Twitter) client.</p>
-<p><a href="https://mozilla.org/thunderbird" target="_blank"><button type="button" class="btn btn-success">Website: mozilla.org</button></a></p>
+<p><img src="img/tools/Thunderbird.png" alt="Thunderbird" align="right" style="margin-left:5px;">Thunderbird ist eine freie E-Mail-Anwendung, die man einfach einrichten und anpassen kann &minus; und sie ist voll mit tollen Funktionen!. Thunderbird kann Email, Newsgroups, RSS Feeds und (XMPP, IRC, Twitter) Chat. Au&szlig;erdem ist es durch tausende AddOns erweiterbar.</p>
+<p><a href="https://mozilla.org/de/thunderbird" target="_blank"><button type="button" class="btn btn-success">Webseite: Mozilla Thunderbird</button></a></p>
 <p>OS: Windows, Mac, Linux, BSD.</p>
 </div>
 </div>
@@ -1059,15 +1087,15 @@ Take it a step further and get control of your email with this easy-to-deploy ma
 <h3 class="panel-title">Claws Mail</h3>
 </div>
 <div class="panel-body">
-<p><img src="img/tools/Claws-Mail.png" alt="Claws Mail" align="right" style="margin-left:5px;">Claws Mail is a free and open source, GTK+-based email and news client. It offers easy configuration and an abundance of features. It is included with Gpg4win, an encryption suite for Windows.</p>
-<p><a href="http://www.claws-mail.org/" target="_blank"><button type="button" class="btn btn-info">Website: claws-mail.org</button></a></p>
+<p><img src="img/tools/Claws-Mail.png" alt="Claws Mail" align="right" style="margin-left:5px;">Claws Mail ist ein freier und quelloffener Mail- und Newsclient. Es ist einfach zu konfigurieren und bietet eine Vielzahl an Features. Auch ist Gpg4win bereits enthalten, die GPG Verschl&uuml;sselung f&uuml;r Windows.</p>
+<p><a href="http://www.claws-mail.org/" target="_blank"><button type="button" class="btn btn-info">Webseite: Claws-Mail</button></a></p>
 <p>OS: Windows, Mac, Linux, BSD, Solaris, Unix.</p>
 </div>
 </div>
 </div>
 
 
-
+<!-- # nicht wirklich ein brauchbarer Client, nur online
 <div class="col-sm-4">
 <div class="panel panel-warning">
 <div class="panel-heading">
@@ -1080,9 +1108,11 @@ Take it a step further and get control of your email with this easy-to-deploy ma
 </div>
 </div>
 </div>
+-->
 </div>
 
-<h3>Worth Mentioning</h3>
+
+<h3>Erw&auml;hnenswert:</h3>
 <ul>
 <li><a href="https://github.com/k9mail/k-9/releases" target="_blank">K-9 Mail</a> - An independent mail application for Android. It supports both POP3 and IMAP mailboxes, but only supports push mail for IMAP.</li>
 <li><a href="https://www.gnupg.org/" target="_blank">GNU Privacy Guard</a> - Email Encryption. GnuPG is a GPL Licensed alternative to the PGP suite of cryptographic software. Use <a href="https://gpgtools.org/" target="_blank">GPGTools for Mac OS X.</a></li>
@@ -1091,7 +1121,7 @@ Take it a step further and get control of your email with this easy-to-deploy ma
 
 <a class="anchor" name="messaging"></a>
 <div class="page-header">
-<h1>Email Alternatives</h1>
+<h1>Email Alternativen</h1>
 </div>
 <div class="row">
 <div class="col-sm-4">
@@ -1123,7 +1153,7 @@ Take it a step further and get control of your email with this easy-to-deploy ma
 <div class="col-sm-4">
 <div class="panel panel-warning">
 <div class="panel-heading">
-<h3 class="panel-title">Pond - Experimental</h3>
+<h3 class="panel-title">Pond - experimentell</h3>
 </div>
 <div class="panel-body">
 <p><img src="img/tools/Pond.png" alt="Pond" align="right" style="margin-left:5px;">Pond is forward secure, asynchronous messaging for the discerning. Pond messages are asynchronous, but are not a record; they expire automatically a week after they are received. Pond seeks to prevent leaking traffic information against everyone except a global passive attacker. Build instructions are OS: Ubuntu, Debian Wheezy, Tails, Fedora, Arch and Mac OS X.</p>
@@ -1134,7 +1164,7 @@ Take it a step further and get control of your email with this easy-to-deploy ma
 </div>
 </div>
 
-<h3>Worth Mentioning</h3>
+<h3>Erw&auml;hnenswert:</h3>
 <ul>
 <li><a href="http://retroshare.sourceforge.net/" target="_blank">RetroShare</a> - Open Source cross-platform, Friend-2-Friend and secure decentralised communication platform.</li>
 </ul>
@@ -1142,23 +1172,23 @@ Take it a step further and get control of your email with this easy-to-deploy ma
 
 <a class="anchor" name="search"></a>    
       <div class="page-header">
-        <h1>Privacy Respecting Search Engines</h1> 
+        <h1>Web Suchmaschinen, die deine Privatheit respektieren</h1> 
       </div>
 
       <div class="alert alert-warning" role="alert">
-        <strong> If you are currently using a search engines like Google, Bing or Yahoo you should pick an alternative here. </strong>
+        <strong> Falls du gerade eine Suchmaschine wie Google, Bing oder Yahoo nutzt solltest du dir hier eine Alternative aussuchen. </strong>
       </div> 
 
       <div class="row">
         <div class="col-sm-4">
           <div class="panel panel-success">
             <div class="panel-heading">
-              <h3 class="panel-title">privatesearch.io</h3>
+              <h3 class="panel-title">privatesearch</h3>
             </div>
             <div class="panel-body">
-              <p><img src="img/provider/privatesearch.io.jpg" alt="privatesearch.io" align="right" style="margin-left:5px;">An <a href="https://github.com/asciimoo/searx" target="_blank">open source</a> metasearch engine, aggregating the results of other search engines while not storing information about its users. No logs, no ads and no tracking.</p>
+              <p><img src="img/provider/privatesearch.jpg" alt="privatesearch" align="right" style="margin-left:5px;">Eine <a href="https://github.com/asciimoo/searx" target="_blank">quelloffene</a> Metasuchmaschine. Aggregation der Ergebnisse anderer Suchmaschinen, w&auml;hrend keine Informationen &uuml;ber seine Nutzer gespeichert werden. Keine Protokolle, keine Werbung und keine Verfolgung/ tracking.</p>
               
-              <p><a href="https://www.privatesearch.io/" target="_blank"><button type="button" class="btn btn-success">Website: privatesearch.io</button></a></p>          
+              <p><a href="https://privatesearch.it-sec.rocks/" target="_blank"><button type="button" class="btn btn-success">Website: privatesearch</button></a></p>          
             </div>
           </div>
         </div><!-- /.col-sm-4 -->  
@@ -1168,10 +1198,10 @@ Take it a step further and get control of your email with this easy-to-deploy ma
               <h3 class="panel-title">DuckDuckGo</h3>
             </div>
             <div class="panel-body">
-              <p><img src="img/provider/DuckDuckGo.jpg" alt="DuckDuckGo" align="right" style="margin-left:5px;">The search engine that doesn't track you. Some of DuckDuckGo's code is free software hosted at <a href="https://github.com/duckduckgo" target="_blank">GitHub</a>, but the core is proprietary. The company is based in the USA.</p>
+              <p><img src="img/provider/DuckDuckGo.jpg" alt="DuckDuckGo" align="right" style="margin-left:5px;">Die Suchmaschine, die dich nicht trackt. Etwas von DuckDuckGo's Code wird als freie Software auf <a href="https://github.com/duckduckgo" target="_blank">GitHub</a> gestellt aber die Kernsoftware ist propriet&auml;r. <strong>Firmensitz ist in den USA.</strong></p>
               
               <p>
-	              <a href="https://duckduckgo.com/" target="_blank"><button type="button" class="btn btn-info">Website: duckduckgo.com</button></a>
+	              <a href="https://duckduckgo.com/" target="_blank"><button type="button" class="btn btn-info">Website: DuckDuckGo</button></a>
               <a href="http://3g2upl4pq6kufc4m.onion/" target="_blank"><button type="button" class="btn btn-info">Tor Link</button></a></p>        
             </div>
           </div>
@@ -1182,34 +1212,34 @@ Take it a step further and get control of your email with this easy-to-deploy ma
               <h3 class="panel-title">Disconnect Search</h3>
             </div>
             <div class="panel-body">
-              <p><img src="img/provider/Disconnect-Search.jpg" alt="Disconnect Search" align="right" style="margin-left:5px;">Search privately using your favorite search engine: Google, Yahoo, Bing and DuckDuckGo are available for selection. It masks your IP address, cookies, and other personal info.</p>
+              <p><img src="img/provider/Disconnect-Search.jpg" alt="Disconnect Search" align="right" style="margin-left:5px;">Private Suche &uuml;ber Anbieter wie: Google, Yahoo, Bing und DuckDuckGo. Maskiert die IP Adresse, Cookies und andere pers&ouml;nliche Informationen des Nutzers.</p>
               
-              <p><a href="https://search.disconnect.me/" target="_blank"><button type="button" class="btn btn-warning">Website: search.disconnect.me</button></a></p>          
+              <p><a href="https://search.disconnect.me/" target="_blank"><button type="button" class="btn btn-warning">Website: Disconnect Search</button></a></p>          
             </div>
           </div>
         </div><!-- /.col-sm-4 -->  
       </div>      
 
-<h3>Worth Mentioning</h3>
+<h3>Erw&auml;hnenswert:</h3>
 <ul>
 	<li><a href="https://metager.de/en/" target="_blank">MetaGer</a> - A metasearch engine, which is based in Germany. It focuses on protecting the user's privacy. Supported by 24 own crawlers of small scale web search engines.</li>      
 	<li><a href="https://ixquick.com/" target="_blank">ixquick.com</a> - Returns the top ten results from multiple search engines. It uses a "Star System" to rank its results by awarding one star for every result that has been returned from a search engine. Based in the USA and the Netherlands.</li>
-	<li><a href="https://addons.mozilla.org/en-us/firefox/addon/google-search-link-fix/" target="_blank">Google search link fix</a> - Firefox extension that prevents Google, Yahoo and Yandex search pages from modifying search result links when you click them. This is useful when copying links but it also helps privacy by preventing the search engines from recording your clicks. (<a href="https://github.com/palant/searchlinkfix" target="_blank">Open Source</a>)</li>         
+	<li><a href="https://addons.mozilla.org/de/firefox/addon/google-search-link-fix/" target="_blank">Google search link fix</a> - Firefox extension that prevents Google, Yahoo and Yandex search pages from modifying search result links when you click them. This is useful when copying links but it also helps privacy by preventing the search engines from recording your clicks. (<a href="https://github.com/palant/searchlinkfix" target="_blank">Open Source</a>)</li>         
 </ul>
 
 
 <a class="anchor" name="im"></a>
 <div class="page-header">
-<h1>Encrypted Instant Messenger</h1>
+<h1>Verschl&uuml;sselte Sofortnachrichtendienste</h1>
 </div>
 <div class="alert alert-warning" role="alert">
-<strong>If you are currently using an Instant Messenger like WhatsApp, Viber, LINE or Threema you should pick an alternative here.</strong>
+<strong>Falls du gerade einen Messenger wie WhatsApp, Viber oder LINE verwendest kannst du hier eine Alternative finden.</strong>
 </div>
 <div class="row">
 <div class="col-sm-4">
 <div class="panel panel-success">
 <div class="panel-heading">
-<h3 class="panel-title">Most Secure: ChatSecure</h3>
+<h3 class="panel-title">Am sichersten: ChatSecure</h3>
 </div>
 <div class="panel-body">
 <p><img src="img/tools/ChatSecure.png" align="right" style="margin-left:5px;">ChatSecure is a free and open source messaging app that features OTR encryption over XMPP. You can connect to your existing accounts on Facebook or Google, create new accounts on public XMPP servers (including via Tor), or even connect to your own server for extra security. ChatSecure only uses well-known open source cryptographic libraries to keep your conversations private.</p>
@@ -1221,7 +1251,7 @@ Take it a step further and get control of your email with this easy-to-deploy ma
 <div class="col-sm-4">
 <div class="panel panel-info">
 <div class="panel-heading">
-<h3 class="panel-title">Mobile: TextSecure / Signal</h3>
+<h3 class="panel-title">Mobil: TextSecure / Signal</h3>
 </div>
 <div class="panel-body">
 <p><img src="img/tools/Open-Whisper-Systems.png" alt="Open Whisper Systems" align="right" style="margin-left:5px;">TextSecure and Signal are mobile apps developed by Open Whisper Systems. The company also developed <a href="https://whispersystems.org/" target="_blank">RedPhone</a>. All three apps are able to communicate with each other. The apps provide end-to-end encryption for your text messages. TextSecure is free and open source, enabling anyone to verify its security by auditing the code. Encrypted group chats are also supported.</p>
@@ -1236,7 +1266,7 @@ Take it a step further and get control of your email with this easy-to-deploy ma
 <div class="col-sm-4">
 <div class="panel panel-warning">
 <div class="panel-heading">
-<h3 class="panel-title">Good for Browsers: Cryptocat</h3>
+<h3 class="panel-title">F&uuml;r Browser: Cryptocat</h3>
 </div>
 <div class="panel-body">
 <p><img src="img/tools/Cryptocat.png" align="right" style="margin-left:5px;">Cryptocat is an open source web and mobile application intended to allow secure, encrypted online chatting. Cryptocat uses end-to-end encryption and encrypts chats on the client side, only trusting the server with data that is already encrypted. Cryptocat's stated goal is to make encrypted communications more accessible to average users.</p>
@@ -1246,14 +1276,14 @@ Take it a step further and get control of your email with this easy-to-deploy ma
 </div>
 </div>
 </div>
-<h3>Worth Mentioning</h3>
+<h3>Erw&auml;hnenswert:</h3>
 <ul>
 <li><a href="https://ricochet.im" target="_blank">Ricochet</a> - A peer-to-peer instant messaging system built on Tor hidden services. Your login is your hidden service address, and contacts connect to you through Tor.</li>
 <li><a href="http://kontalk.org/" target="_blank">Kontalk</a> - A community-driven instant messaging network. Supports end-to-end encryption. Both client-to-server and server-to-server channels are fully encrypted.</li>
 <li><a href="https://play.google.com/store/apps/details?id=eu.siacs.conversations" target="_blank">Conversations</a> - An open source Jabber/XMPP client for Android 4.0+ smart phones. Supports end-to-end encryption with either OTR or openPGP.</li>
 </ul>
 
-<h3>Related Information</h3>
+<h3>Weitere Informationen</h3>
 <ul>
 <li><a href="https://www.eff.org/secure-messaging-scorecard" target="_blank">Secure Messaging Scorecard | Electronic Frontier Foundation</a>
 <br />Which apps and tools actually keep your messages safe?</li>
@@ -1263,16 +1293,16 @@ Take it a step further and get control of your email with this easy-to-deploy ma
 
 <a class="anchor" name="voip"></a>
 <div class="page-header">
-<h1>Encrypted Video & Voice Messenger</h1>
+<h1>Verschl&uuml;sselte Video & Sprach Messenger</h1>
 </div>
 <div class="alert alert-warning" role="alert">
-<strong>If you are currently using an Video & Voice Messenger like Skype, Viber or Google Hangouts you should pick an alternative here.</strong>
+<strong>Wenn du gerade Messenger wie Skype, Viber oder Google Hangouts verwendest solltest du dir die Alternativen hier anschauen.</strong>
 </div>
 <div class="row">
 <div class="col-sm-4">
 <div class="panel panel-success">
 <div class="panel-heading">
-<h3 class="panel-title">RedPhone / Signal for Mobile</h3>
+<h3 class="panel-title">RedPhone / Signal (Mobil)</h3>
 </div>
 <div class="panel-body">
 <p><img src="img/tools/Open-Whisper-Systems.png" alt="Open Whisper Systems" align="right" style="margin-left:5px;">RedPhone and Signal are mobile apps developed by Open Whisper Systems. The company also developed <a href="https://whispersystems.org/" target="_blank">TextSecure</a>. All three apps are able to communicate with each other. The apps provide end-to-end encryption for your calls.</p>
@@ -1311,7 +1341,7 @@ Take it a step further and get control of your email with this easy-to-deploy ma
 </div>
 
 
-<h3>Worth Mentioning</h3>
+<h3>Erw&auml;hnenswert:</h3>
 <ul>
 <li><a href="https://tox.chat/" target="_blank">Tox</a> - A free and open-source, peer-to-peer, encrypted instant messaging and video calling software.</li>
 <li><a href="https://subrosa.io/" target="_blank">Subrosa</a> - End to end encrypted communications platform. Supports text, voice, video including group chats.</li>
@@ -1532,7 +1562,7 @@ Take it a step further and get control of your email with this easy-to-deploy ma
 <h3>Worth Mentioning</h3>
 <ul>
 <li><a href="https://privacytools.it-sec.rocks/password.html	" target="_blank">Secure Password Generator</a> - generates a unique set of custom, high quality, cryptographic-strength password strings which are safe for you to use.</li>
-<li><a href="http://www.supergenpass.com/" target="_blank">SuperGenPass</a> - A master password and the domain name of the Web site you are visiting is used as the “seed” for a one-way hash algorithm (base-64 MD5). The output of this algorithm is your generated password. You remember one password (your “master password”), and SGP uses it to generate unique, complex passwords for the Web sites you visit. Your generated passwords are never stored or transmitted, so you can use SGP on as many computers as you like without having to “sync” anything.</li>
+<li><a href="http://www.supergenpass.com/" target="_blank">SuperGenPass</a> - A master password and the domain name of the Web site you are visiting is used as the â€œseedâ€ for a one-way hash algorithm (base-64 MD5). The output of this algorithm is your generated password. You remember one password (your â€œmaster passwordâ€), and SGP uses it to generate unique, complex passwords for the Web sites you visit. Your generated passwords are never stored or transmitted, so you can use SGP on as many computers as you like without having to â€œsyncâ€ anything.</li>
 <li><a href="http://pwsafe.org/" target="_blank">Password Safe</a> - Whether the answer is one or hundreds, Password Safe allows you to safely and easily create a secured and encrypted user name/password list. With Password Safe all you have to do is create and remember a single "Master Password" of your choice in order to unlock and access your entire user name/password list.</li>
 </ul>
 
@@ -1999,7 +2029,7 @@ diaspora* is based on three key philosophies: Decentralization, freedom and priv
 
 <blockquote>
 <p>Arguing that you don't care about the right to privacy because you have nothing to hide is no different than saying you don't care about free speech because you have nothing to say.</p>
-<footer>Edward Snowden on <cite title="Just days left to kill mass surveillance under Section 215 of the Patriot Act. We are Edward Snowden and the ACLU’s Jameel Jaffer. AUA."><a href="https://www.reddit.com/r/IAmA/comments/36ru89/just_days_left_to_kill_mass_surveillance_under/crglgh2" target="_blank">reddit</a></cite></footer>
+<footer>Edward Snowden on <cite title="Just days left to kill mass surveillance under Section 215 of the Patriot Act. We are Edward Snowden and the ACLUâ€™s Jameel Jaffer. AUA."><a href="https://www.reddit.com/r/IAmA/comments/36ru89/just_days_left_to_kill_mass_surveillance_under/crglgh2" target="_blank">reddit</a></cite></footer>
 </blockquote>
 
 <blockquote>
@@ -2009,19 +2039,19 @@ I don't want to live in a society that does these sort of things... I do not wan
 </blockquote>
 
 <blockquote>
-<p>We all need places where we can go to explore without the judgmental eyes of other people being cast upon us, only in a realm where we’re not being watched can we really test the limits of who we want to be. It’s really in the private realm where dissent, creativity and personal exploration lie.</p>
+<p>We all need places where we can go to explore without the judgmental eyes of other people being cast upon us, only in a realm where weâ€™re not being watched can we really test the limits of who we want to be. Itâ€™s really in the private realm where dissent, creativity and personal exploration lie.</p>
 <footer>Glenn Greenwald in <cite title="Glenn Greenwald On Why Privacy Is Vital, Even If You 'Have Nothing To Hide"><a href="http://www.huffingtonpost.com/2014/06/20/glenn-greenwald-privacy_n_5509704.html" target="_blank">Huffington Post</a></cite></footer>
 </blockquote>
 
 <a class="anchor" name="resources"></a>
 <div class="page-header">
-<h1>Recommended Privacy Resources</h1>
+<h1>Weitere empfohlene Quellen zum Thema</h1>
 </div>
 
 <ul>
 	<li><a href="http://ipleak.net/" target="_blank"><strong>ipleak.net</strong></a> - IP/DNS Detect - What is your IP, what is your DNS, what informations you send to websites.</li>
 	<li><a href="https://ssd.eff.org/" target="_blank"><strong>Surveillance Self-Defense by EFF</strong></a> - Guide to defending yourself from surveillance by using secure technology and developing careful practices.</li>
-	<li><a href="https://prism-break.org/" target="_blank"><strong>PRISM Break</strong></a> - We all have a right to privacy, which you can exercise today by encrypting your communications and ending your reliance on proprietary services.</li>
+	<li><a href="https://prism-break.org/de/" target="_blank"><strong>PRISM Break</strong></a> - We all have a right to privacy, which you can exercise today by encrypting your communications and ending your reliance on proprietary services.</li>
 	<li><a href="https://securityinabox.org/" target="_blank"><strong>Security in-a-Box</strong></a> - A guide to digital security for activists and human rights defenders throughout the world.</li>
 	<li><a href="https://www.bestvpn.com/the-ultimate-privacy-guide/" target="_blank"><strong>The Ultimate Privacy Guide</strong></a> - Excellent privacy guide written by the creators of the bestVPN.com website.</li>
 	<li><a href="https://www.ivpn.net/privacy-guides" target="_blank"><strong>IVPN Privacy Guides</strong></a> - These privacy guides explain how to obtain vastly greater freedom, privacy and anonymity through compartmentalization and isolation.</li>
@@ -2034,10 +2064,10 @@ I don't want to live in a society that does these sort of things... I do not wan
 
 <a class="anchor" name="participate"></a>
 <div class="page-header">
-<h1>Spread the word and help your friends</h1>
+<h1>Sag die Seite weiter und hilf deinen Freunden</h1>
 </div>
 
-<a href="mailto:?subject=privacytools.it-sec.rocks%20-%20Verschluesselung%20gegen%20globale%20Massenueberwachung&body=https://privacytools.it-sec.rocks/" target="_blank" class="share-btn email" title="Email">
+<a href="mailto:?subject=privacytools.it-sec.rocks%20-%20Verschl&uuml;sselung%20gegen%20globale%20Massen&uuml;berwachung&body=https://privacytools.it-sec.rocks/" target="_blank" class="share-btn email" title="Email">
     <i class="fa fa-envelope"></i>
 </a>
 
@@ -2045,16 +2075,22 @@ I don't want to live in a society that does these sort of things... I do not wan
 <br>
 
 <div class="page-header">
-<h1>Participate with suggestions and constructive criticism</h1>
+<h1>Beteilige dich mit Vorschl&auml;gen oder gern auch Kritik</h1>
 </div>
-<a href="http://www.reddit.com/r/privacytoolsIO/" target="_blank"><img src="img/layout/reddit-logo.png" class="img-responsive pull-right" alt="reddit logo" style="margin-left:10px;"></a>
+<br>
+<i class="fa fa-comments"></i> <strong>Tox ID:</strong> 96DBEC75B69DE689DF4375F82233AB489A2957200BF24574A0E472822A9ECC0F76D1BADE720D
+<br>
+<i class="fa fa-envelope"></i> <strong>Email:</strong> anregung{&auml;t}it-sec.rocks
+<br>
+<br>
+<br>
 <p>
-It's important for a website like privacytools.it-sec.rocks to be up-to-date. Keep an eye on software updates of the applications listed here. Follow recent news about providers that are recommended. We try our best to keep up but we're not perfect and the internet is changing fast. If you find an error, or you think a provider should not be listed here, or a qualified service provider is missing or a browser plugin is not the best choice anymore and anything else... <strong>Talk to us please.</strong> This is a community project and we're aiming to deliver the best information available for a better privacy.
+F&uuml;r eine Webseite wie privacytools.it-sec.rocks ist es wichtig immer auf dem Laufenden zu sein. Halte die Augen offen, ob es f&uuml;r die hier aufgef&uuml;hrte Software Updates gibt. Folge den <a href="http://heise.de">Nachrichten</a>, ob es <a href="http://golem.de">Neuigkeiten</a> zu der von dir eingesetzten Software gibt. Ich versuche mein Bestes die Seite aktuell zu halten aber bin nicht perfekt, habe einen Job und das Internet &auml;ndert sich schnell. Wenn du Fehler findest oder der Meinung bist ein Anbieter sollte hier nicht aufgef&uuml;hrt werden, wenn ein Anbieter fehlt oder ein Browser Plugin nicht mehr die beste Wahl ist ... <strong>sprich bitte mit mir.</strong> Das ist ein gemeinschaftliches Projekt und das Ziel ist hier die besten Informationen zum Thema Sicherheit und Datenschutz zu vereinen.
 </p>
 
 <p>
-	<h3>Here is what you can do:</h3>
-	Schau dir den Quellcode der Seite auf GitHub an oder editiere ihn: <a href="https://github.com/privacytoolsIO/privacytools.io" target="_blank">https://github.com/privacytoolsIO/privacytools.io</a>
+	<h3>Du kannst auch mithelfen:</h3>
+	Schau dir den Quellcode der Seite auf GitHub an und bring dich mit Verbesserungsvorschl&auml;gen ein: <a href="https://github.com/Anon215/privacytools.it-sec.rocks" target="_blank">https://github.com/Anon215/privacytools.it-sec.rocks</a>
 </p>
 
 <p>Danke f&uuml;r deine Teilnahme. Dieses Projekt braucht dich.</p>
@@ -2063,7 +2099,7 @@ It's important for a website like privacytools.it-sec.rocks to be up-to-date. Ke
 <br>
 
 <div class="page-header">
-<h4>Keine Werbung, kein Google Analytics, keine verbundenen Unternehmen, keine Websiten-&uuml;bergreifende Anfragenf&auml;lschung</h4>
+<h4>Keine Werbung, kein Google Analytics, keine verbundenen Unternehmen, keine Webseiten-&uuml;bergreifende Anfragenf&auml;lschung</h4>
 </div>
 <p>
 
@@ -2072,8 +2108,10 @@ It's important for a website like privacytools.it-sec.rocks to be up-to-date. Ke
 <a href="http://www.kopimi.com/" data-toggle="tooltip" data-placement="top" target="_blank" style="margin-right:30px;" data-original-title="kopimi (copyme), dieses Symbol signalisiert, dass ich es ausdr&uuml;cklich begr&uuml;&szlig;e, wenn die Seite kopiert und verbreitet wird. Benutze kopimi wie es dir beliebt. kopimi kannst du auf Homepages, Blogs, B&uuml;chern, in Software, als Sound Logo in Musik oder was auch immer verwenden."><img src="img/layout/kopimi.gif" style="margin-right:15px;">kopimi (copyme)</a>
 
 <a href="donate.html" data-toggle="tooltip" data-placement="top" data-original-title="Indem du Bitcoins spendest kannst du dieses Projekt unterst&uuml;tzen. Ich verzichte komplett auf Werbebanner und bin nicht gewerblich an einen Anbieter gebunden. Deine Spende wird helfen die Server- und Domainkosten zu decken."><img src="img/layout/Bitcoin.png" style="margin-right:15px;">Donate:</a> <span  style="margin-left:15px;">1HXZGhhximbCTK5fR7ShugebvXS4tPvW1v</span>
-
 </p>
+<div style="text-align:center";>
+<a href="https://internetdefenseleague.org" target="_blank"><img src="https://internetdefenseleague.org/images/badges/final/shield_badge.png" width="200" height="220" alt="Member of The Internet Defense League"/></a></div>
+
 
 <p><em>privacytools.it-sec.rocks ist eine sozial motivierte Webseite, die Informationen bereitstellt um deine Daten und Privatsph&auml;re zu sch&uuml;tzen. <br>Vertraue niemals einer Firma deine pers&ouml;nlichsten Daten an, verschl&uuml;ssele immer!</em></p>
 </div>
@@ -2082,6 +2120,8 @@ It's important for a website like privacytools.it-sec.rocks to be up-to-date. Ke
 <script src="js/bootstrap.min.js"></script>
 <script src="js/sortable.min.js"></script>
 <script> $(function () { $("[data-toggle='tooltip']").tooltip(); }); </script>
-
+<div style="position: fixed; bottom: 10px; right: 10px;  overflow-x: hidden;">
+<button onclick="scrollToTop(600);"><img src="img/misc/finger.png" /></button>
+</div>
 </body>
 </html>
