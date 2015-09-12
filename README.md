@@ -6,7 +6,7 @@ _Verschlüsselung gegen globale Massenüberwachung_
 
 Dies ist ein deutscher Ableger der englischen Seite https://www.privacytools.io.            
 Es ist wichtig das Projekt zu unterstützen.         
-Momentan ist das Repo und die Seite hier "under heavy development"!              
+Momentan ist das Repo und die Seite hier "schwer in Etwicklung"!              
 Gerne kannst du aber schon jetzt auch eigene Vorschläge oder Kritik einbringen.             
 Dafür stehen dir verschiedene Kanäle zur Verfügung.
 
