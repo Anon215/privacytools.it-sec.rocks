@@ -38,8 +38,8 @@ Maximal werden 3 Anbieter direkt vorgeschlagen und weitere können unter "Erwäh
 
 ## Unterstütze privacytools.it-sec.rocks
 
-- [Spende.](https://www.privacytools.it-sec.rocks/donate.html)
-- [Teile die Seite.](https://www.privacytools.it-sec.rocks/#participate)
+- [Spende.](https://privacytools.it-sec.rocks/donate.html)
+- [Teile die Seite.](https://privacytools.it-sec.rocks/#participate)
 - Schau dir den Quellcode der Webseite hier auf Github an und bringe dich mit ein.
 
 ## Lizenz
