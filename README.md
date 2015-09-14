@@ -15,8 +15,8 @@ ToxID: 96DBEC75B69DE689DF4375F82233AB489A2957200BF24574A0E472822A9ECC0F76D1BADE7
 Jabber: gitacc@xmpp.bytesund.biz                 
 Mail: anregung{ät}it-sec.rocks
 
-Bitte sieh davon ab hier auf Github Vorschläge einzubringen und Änderungen einzureichen.
-Dafür habe ich andere Kanäle, auf denen ich besser erreichbar bin.
+Du kannst hier auf Github Vorschläge einbringen aber ich würde dich bitten Änderungen per Mail einzureichen.
+Da bin ich besser erreichbar.
 
 
 ## Richtlinien, um einen Beitrag einzureichen:
