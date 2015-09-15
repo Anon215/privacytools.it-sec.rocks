@@ -13,7 +13,7 @@ Dafür stehen dir verschiedene Kanäle zur Verfügung.
 **Sprich einfach mit mir.**               
 ToxID: 96DBEC75B69DE689DF4375F82233AB489A2957200BF24574A0E472822A9ECC0F76D1BADE720D                 
 Jabber: gitacc@xmpp.bytesund.biz                 
-Mail: anregung{ät}it-sec.rocks
+Mail: ([anregung{ät}it-sec.rocks](mailto:anregung@it-sec.rocks)) ([openPGP Key](https://pgp.mit.edu/pks/lookup?op=get&search=0xBE3A1E5BD80BFE23))
 
 Du kannst hier auf Github Vorschläge einbringen aber ich würde dich bitten Änderungen per Mail einzureichen,          da ich so besser erreichbar bin.
 
