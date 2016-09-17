@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=1024">
+<meta name="referrer" content="no-referrer">
 
 <meta name="keywords" content="privacy tools, surveillance, encryption, edward snowden, nsa, tor, bitcoin">
 <meta name="description" content="Du wirst beobachtet. Private und staatlich finanzierte Organisationen protokollieren und speichern deine online Aktivit&auml;ten. privacytools.it-sec.rocks bietet hier Wissenswertes und Werkzeuge um deine Privatsph&auml;re gegen die globale Massen&uuml;berwachung zu sch&uuml;tzen.">
@@ -888,17 +889,6 @@ Das ist eine Auswahl an <strong>about:config</strong> Einstellungen. Hier zeige 
 <tbody>
 
 <tr>
-<td data-value="GhostMail"><a href="https://www.ghostmail.com/" target="_blank"><img src="img/provider/GhostMail.gif" width="200" height="70"><br />GhostMail</a></td>
-<td data-value="2015">2015</td>
-<td>Schweden</td>
-<td data-value="1000">1 GB</td>
-<td data-value="0"><span class="label label-warning">kostenlos</span></td>
-<td><span class="label label-success">ja</span></td>
-<td><span class="label label-success">integriert</span></td>
-<td><span class="label label-primary">nein</span></td>
-</tr>
-
-<tr>
 <td data-value="OpenMailBox"><a href="https://www.openmailbox.org/" target="_blank"><img src="img/provider/OpenMailBox.gif" width="200" height="70"><br />OpenMailBox</a></td>
 <td data-value="2013">2013</td>
 <td>Frankreich</td>
@@ -1239,43 +1229,49 @@ Mit Mail-in-a-Box kannst du in ein paar einfachen Schritten dein eigener Mail-Di
 <div class="col-sm-4">
 <div class="panel panel-success">
 <div class="panel-heading">
-<h3 class="panel-title">Sicher: ChatSecure</h3>
+<h3 class="panel-title">Conversations | XMPP (mit omemo)</h3>
 </div>
 <div class="panel-body">
-<p><img src="img/tools/ChatSecure.png" align="right" style="margin-left:5px;">ChatSecure ist ein freier und quelloffener Messenger mit OTR Verschl&uuml;sselung per XMPP (Jabber). Du kannst bestehende Jabber Server verwenden oder einen eigenen XMPP Server betreiben, f&uuml;r das Plus an Sicherheit.</p>
-<p><a href="https://www.chatsecure.org/" target="_blank"><button type="button" class="btn btn-success">Download: ChatSecure</button></a></p>
-<p><strong>OS:</strong> iOS, Android, <a href="https://en.wikipedia.org/wiki/Off-the-Record_Messaging#Client_support" target="_blank">andere OTR Clients.</a></p>
+<p><img src="img/tools/conversations_logo.png" align="right" style="margin-left:5px;">Conversations ist ein Programm, welches auf das XMPP Protokoll zur&uuml;ck greift. Damit ist gr&ouml;&szlig;tm&ouml;gliche Reichweite und Kompatibilit&auml;t gew&auml;hrleistet. Verschl&uuml;sselt wird per <a href="https://de.wikipedia.org/wiki/Off-the-Record_Messaging" target="_blank">OTR</a> oder <a href="https://de.wikipedia.org/wiki/OMEMO" target="_blank">omemo</a>. Mobil ist omemo zu bevorzugen!</p>
+<p><a href="https://conversations.im/" target="_blank"><button type="button" class="btn btn-success">Download: Conversations</button></a></p>
+<p><strong>OS:</strong> Android (f&uuml;r iOS wird omemo in Chatsecure <a href="https://chatsecure.org/blog/" target="_blank">implementiert</a>!)</p>
 </div>
 </div>
 </div>
 <div class="col-sm-4">
 <div class="panel panel-info">
 <div class="panel-heading">
-<h3 class="panel-title">Mobil: TextSecure / Signal</h3>
+<h3 class="panel-title">Sicher: ChatSecure</h3>
 </div>
 <div class="panel-body">
-<p><img src="img/tools/Open-Whisper-Systems.png" alt="Open Whisper Systems" align="right" style="margin-left:5px;">TextSecure und Signal sind mobile Apps von Open Whisper Systems. Die Organisation hat auch <a href="https://whispersystems.org/" target="_blank">RedPhone</a> entwickelt. Die Apps bieten Ende zu Ende Verschl&uuml;sselung und Gruppenchats. Meta Daten k&ouml;nnen erfasst werden und die Handynummer wird zur Verifikation genutzt!</p>
-<p>
-<a href="https://play.google.com/store/apps/details?id=org.thoughtcrime.securesms&hl=de" target="_blank"><button type="button" class="btn btn-info">Android: Google Play-Store</button></a>
-<a href="https://itunes.apple.com/de/app/signal-private-messenger/id874139669?mt=8" target="_blank"><button type="button" class="btn btn-info">iOS: Apple iTunes</button></a>
-</p>
-<p><strong>OS:</strong> Android, iOS.</p>
+<p><img src="img/tools/ChatSecure.png" align="right" style="margin-left:5px;">ChatSecure ist ein freier und quelloffener Messenger mit OTR Verschl&uuml;sselung per XMPP (Jabber). Du kannst bestehende Jabber Server verwenden oder einen eigenen XMPP Server betreiben, f&uuml;r das Plus an Sicherheit.</p>
+<p><a href="https://www.chatsecure.org/" target="_blank"><button type="button" class="btn btn-info">Download: ChatSecure</button></a></p>
+<p><strong>OS:</strong> iOS, Android, <a href="https://en.wikipedia.org/wiki/Off-the-Record_Messaging#Client_support" target="_blank">andere OTR Clients.</a></p>
 </div>
 </div>
 </div>
 <div class="col-sm-4">
 <div class="panel panel-warning">
 <div class="panel-heading">
-<h3 class="panel-title">Experimentell: Ricochet</h3>
+<h3 class="panel-title">Mobil: TextSecure / Signal</h3>
 </div>
 <div class="panel-body">
-<p><img src="img/tools/Ricochet.png" align="right" style="margin-left:5px;">Ricochet ist eine experimentelle aber schon sichere L&ouml;sung, um komplett verschl&uuml;sselt und ohne Meta Daten zu hinterlassen zu kommunizieren. <a href="https://github.com/ricochet-im/ricochet">HIER</a> gibt es weitere Infos auf GitHub.</p>
-<p><a href="https://ricochet.im/" target="_blank"><button type="button" class="btn btn-warning">Download: Ricochet</button></a></p>
-<p><strong>OS:</strong> Windows, Mac, Linux.</p>
+<p><img src="img/tools/Open-Whisper-Systems.png" alt="Open Whisper Systems" align="right" style="margin-left:5px;">TextSecure und Signal sind mobile Apps von Open Whisper Systems. Die Organisation hat auch <a href="https://whispersystems.org/" target="_blank">RedPhone</a> entwickelt. Die Apps bieten Ende zu Ende Verschl&uuml;sselung und Gruppenchats. Meta Daten k&ouml;nnen erfasst werden und die Handynummer wird zur Verifikation genutzt!</p>
+<p>
+<a href="https://play.google.com/store/apps/details?id=org.thoughtcrime.securesms&hl=de" target="_blank"><button type="button" class="btn btn-warning">Android: Google Play-Store</button></a>
+<a href="https://itunes.apple.com/de/app/signal-private-messenger/id874139669?mt=8" target="_blank"><button type="button" class="btn btn-warning">iOS: Apple iTunes</button></a>
+</p>
+<p><strong>OS:</strong> Android, iOS.</p>
 </div>
 </div>
 </div>
 </div>
+
+<h3>Erw&auml;hnenswert:</h3>
+<ul>
+	<li><a href="https://ricochet.im/" target="_blank">Ricochet</a> - Ricochet ist eine experimentelle aber schon sichere L&ouml;sung, um komplett verschl&uuml;sselt und ohne Meta Daten zu hinterlassen zu kommunizieren. <a href="https://github.com/ricochet-im/ricochet">HIER</a> gibt es weitere Infos auf GitHub.</li>      
+    <li><a href="https://threema.ch/de/" target="_blank">Threema</a> - Threema ist ein Crypto Messenger aus der Schweiz. Zwar nicht open source(!) aber bereits <a href="https://threema.ch/press-files/2_documentation/external_audit_security_statement.pdf" target="_blank">diverse Male</a> <a href="https://www.os3.nl/_media/2013-2014/courses/ssn/projects/threema_report.pdf#page13" target="_blank">reverse engineered</a> wurden keine Schwachstellen in der Implementierung oder Backdoors entdeckt. Threema verschl&uuml;sselt Ende zu Ende, der Server in der Schweiz bildet nur das Relais. Da kein Telefonnummernabgleich n&ouml;tig ist sind auch Metadaten kein gro&szlig;es Thema. Allemal besser als WhatsApp.</li>
+</ul>
 
 <h3>Weitere Informationen</h3>
 <ul>
@@ -1324,7 +1320,7 @@ Mit Mail-in-a-Box kannst du in ein paar einfachen Schritten dein eigener Mail-Di
 <h3 class="panel-title">Linphone</h3>
 </div>
 <div class="panel-body">
-<p><img src="img/tools/Linphone.png" alt="Linphone" align="right" style="margin-left:5px;">Linphone is an open source SIP Phone and a free voice over IP service, available on mobile and desktop environments and on web browsers. It supports ZRTP for end-to-end encrypted voice and video communication.</p>
+<p><img src="img/tools/Linphone.png" alt="Linphone" align="right" style="margin-left:5px;">Linphone ist ein open source SIP Phone und freier VoIP service.Linphone ist mit Mobiltelefonen, Desktops und Browsern verwendbar. Für eine Ende zu Ende Verschlüsselung von Spach- und Videoanrufen wird <a href="https://de.wikipedia.org/wiki/ZRTP" target="_blank">ZRTP</a> unterstützt.</p>
 <p><a href="http://www.linphone.org/" target="_blank"><button type="button" class="btn btn-warning">Download: Linphone.org</button></a></p>
 <p><strong>OS:</strong> iOS, Android, Windows Phone, Linux, Windows, Mac, Browser (Web)</p>
 </div>
