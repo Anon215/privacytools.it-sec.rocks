@@ -307,125 +307,232 @@ Verschl&uuml;sselung ist das digitale &Auml;quivalent dazu. Sie ist wie ein Vorh
 
 <!-- START VPN TABLE -->
 
-<!-- *START LEFT & RIGHT* -->
-<div class="container">
-<div class="row">
-<!-- *LEFT* -->
-<div class="col-md-6">
-
-<h2>Teil 1</h2>
-<br/>
 
 <table class="sortable-theme-bootstrap" data-sortable>
-<thead>
-<tr>
-<th data-sortable="true">VPN / Land</th>
-<th data-sortable="true" title="Number of Servers">Server</th>
-<th data-sortable="true">Preis</th>
-</tr>
-</thead>
-<tbody>
+  <thead>
+    <tr>
+      <th data-sortable="true">Sortierbare VPN-Anbieterliste</th>
+      <th data-sortable="true">Preis im Jahr</th>
+      <th data-sortable="true">Kostenlose Testphase</th>
+      <th data-sortable="true" title="Number of Servers"># Servers</th>
+      <th data-sortable="true">Zuständigkeit</th>
+      <th data-sortable="false">Website</th>
+    </tr>
+  </thead>
+  <tbody>
 
-<tr>
-<td data-value="AirVPN"><a href="https://airvpn.org/" target="_blank"><img src="img/provider/AirVPN.gif" width="200" height="70"><br />AirVPN.org (Italien)</a></td>
-<td>76</td>
-<td data-value="54">54 &euro;</td>
-</tr>
+    <tr>
+      <td data-value="AirVPN">
+        <a href="https://airvpn.org/"><img src="img/provider/AirVPN.gif" width="200" height="70"></a></td>
+      <td data-value="70">54 €</td>
+      <td><span class="label label-success">ja</span></td>
+      <td>162</td>
+      <td><span class="flag-icon flag-icon-it"></span> Italien</td>
+      <td><a href="https://airvpn.org/">AirVPN.org</a></td>
+    </tr>
 
-<tr>
-<td data-value="AzireVPN"><a href="https://www.azirevpn.com/" target="_blank"><img src="img/provider/AzireVPN.gif" width="200" height="70"><br />AzireVPN.com (Schweden)</a></td>
-<td>3</td>
-<td data-value="54">45 &euro;</td>
-</tr>
+    <tr>
+      <td data-value="AzireVPN">
+        <a href="https://www.azirevpn.com/"><img src="img/provider/AzireVPN.gif" width="200" height="70"></a>
+      </td>
+      <td data-value="58">45 €</td>
+      <td><span class="label label-success">ja</span></td>
+      <td>5</td>
+      <td><span class="flag-icon flag-icon-se"></span> Schweden</td>
+      <td><a href="https://www.azirevpn.com/">AzireVPN.com</a></td>
+    </tr>
 
-<tr>
-<td data-value="blackVPN"><a href="https://www.blackvpn.com/" target="_blank"><img src="img/provider/blackVPN.gif" width="200" height="70"><br />blackVPN.com (Hong Kong)</a></td>
-<td>25</td>
-<td data-value="54">99 &euro;</td>
-</tr>
+    <tr>
+      <td data-value="blackVPN">
+        <a href="https://www.blackvpn.com/"><img src="img/provider/blackVPN.gif" width="200" height="70"></a>
+      </td>
+      <td data-value="128">99 €</td>
+      <td><span class="label label-success">ja</span></td>
+      <td>27</td>
+      <td><span class="flag-icon flag-icon-hk"></span> Hong Kong</td>
+      <td><a href="https://www.blackvpn.com/">blackVPN.com</a></td>
+    </tr>
 
-<tr>
-<td data-value="Cryptostorm"><a href="https://cryptostorm.is/" target="_blank"><img src="img/provider/Cryptostorm.gif" width="200" height="70"><br />Cryptostorm.is (Island)</a></td>
-<td>13</td>
-<td data-value="52">$ 52</td>
-</tr>
+    <tr>
+      <td data-value="Cryptostorm">
+        <a href="https://cryptostorm.is/"><img src="img/provider/Cryptostorm.gif" width="200" height="70"></a>
+      </td>
+      <td data-value="52">$ 52</td>
+      <td><span class="label label-success">ja</span></td>
+      <td>18</td>
+      <td><span class="flag-icon flag-icon-is"></span> Island</td>
+      <td><a href="https://cryptostorm.is/">Cryptostorm.is</a></td>
+    </tr>
 
-<tr>
-<td data-value="FrootVPN"><a href="https://www.frootvpn.com/" target="_blank"><img src="img/provider/FrootVPN.gif" width="200" height="70"><br />FrootVPN.com (Schweden)</a></td>
-<td>27</td>
-<td data-value="36">$ 36</td>
-</tr>
+    <tr>
+      <td data-value="EarthVPN">
+        <a href="http://www.earthvpn.com/"><img src="img/provider/EarthVPN.gif" width="200" height="70"></a>
+      </td>
+      <td data-value="52">39,99 €</td>
+      <td><span class="label label-warning">nein</span></td>
+      <td>432</td>
+      <td><span class="flag-icon flag-icon-cy"></span> Nord-Zypern</td>
+      <td><a href="http://www.earthvpn.com/">EarthVPN.com</a></td>
+    </tr>
 
-<tr>
-<td data-value="hide.me"><a href="https://hide.me/" target="_blank"><img src="img/provider/hide.me.gif" width="200" height="70"><br />hide.me (Malaysia)</a></td>
-<td>85</td>
-<td data-value="65">$ 65</td>
-</tr>
+    <tr>
+      <td data-value="ExpressVPN">
+        <a href="https://www.expressvpn.com/"><img src="img/provider/ExpressVPN.gif" width="200" height="70"></a>
+      </td>
+      <td data-value="100">$ 99.95</td> <!-- USD on March 21, 2017 -->
+      <td><span class="label label-success">ja</span></td>
+      <td>145</td>
+      <td><span class="flag-icon flag-icon-vg"></span> Britische Jungferninseln</td>
+      <td><a href="https://www.expressvpn.com/">ExpressVPN.com</a></td>
+    </tr>
 
-</tbody>
+    <tr>
+      <td data-value="FrootVPN">
+        <a href="https://www.frootvpn.com/"><img src="img/provider/FrootVPN.gif" width="200" height="70"></a>
+      </td>
+      <td data-value="36">$ 35.88</td>
+      <td><span class="label label-warning">nein</span></td>
+      <td>27</td>
+      <td><span class="flag-icon flag-icon-se"></span> Schweden</td>
+      <td><a href="https://www.frootvpn.com/">FrootVPN.com</a></td>
+    </tr>
+
+    <tr>
+      <td data-value="hide.me">
+        <a href="https://hide.me/"><img src="img/provider/hide.me.gif" width="200" height="70"></a>
+      </td>
+      <td data-value="65">$ 65.04</td>
+      <td><span class="label label-success">ja</span></td>
+      <td>88</td>
+      <td><span class="flag-icon flag-icon-my"></span> Malaysia</td>
+      <td><a href="https://hide.me/">hide.me</a></td>
+    </tr>
+
+    <tr>
+      <td data-value="IVPN">
+        <a href="https://www.ivpn.net/"><img src="img/provider/IVPN.gif" width="200" height="70"></a>
+      </td>
+      <td data-value="100">$ 100</td>
+      <td><span class="label label-success">ja</span></td>
+      <td>21</td>
+      <td><span class="flag-icon flag-icon-gi"></span> Gibraltar</td>
+      <td><a href="https://www.ivpn.net/">IVPN.net</a></td>
+    </tr>
+
+    <tr>
+      <td data-value="Mullvad">
+        <a href="https://mullvad.net/"><img src="img/provider/Mullvad.gif" width="200" height="70"></a>
+      </td>
+      <td data-value="78">60 €</td>
+      <td><span class="label label-success">ja</span></td>
+      <td>168</td>
+      <td><span class="flag-icon flag-icon-se"></span> Schweden</td>
+      <td><a href="https://mullvad.net/">Mullvad.net</a></td>
+    </tr>
+
+    <tr>
+      <td data-value="NordVPN">
+        <a href="https://nordvpn.com/"><img src="img/provider/NordVPN.gif" width="200" height="70"></a>
+      </td>
+      <td data-value="69">$ 69</td>
+      <td><span class="label label-success">ja</span></td>
+      <td>475</td>
+      <td><span class="flag-icon flag-icon-pa"></span> Panama</td>
+      <td><a href="https://nordvpn.com/">NordVPN.com</a></td>
+    </tr>
+
+    <tr>
+      <td data-value="OVPN.com">
+        <a href="https://www.ovpn.com/"><img src="img/provider/OVPN.gif" width="200" height="70"></a>
+      </td>
+      <td data-value="84">$ 84</td>
+      <td><span class="label label-success">ja</span></td>
+      <td>39</td>
+      <td><span class="flag-icon flag-icon-se"></span> Schweden</td>
+      <td><a href="https://www.ovpn.com/">OVPN.com</a></td>
+    </tr>
+
+    <tr>
+      <td data-value="Perfect Privacy">
+        <a href="https://www.perfect-privacy.com/"><img src="img/provider/Perfect-Privacy.gif" width="200" height="70"></a>
+      </td>
+      <td data-value="162">124.95 €</td>
+      <td><span class="label label-warning">no</span></td>
+      <td>41</td>
+      <td><span class="flag-icon flag-icon-pa"></span> Panama</td>
+      <td><a href="https://www.perfect-privacy.com/">Perfect-Privacy.com</a></td>
+    </tr>
+
+<!--
+"Warning: It has come to our attention that Privatoria are no longer supporting their service – its advised to try some other VPN provider." Source: https://www.deepdotweb.com/2016/01/03/privatoria-review/
+    <tr>
+      <td data-value="Privatoria">
+        <a href="https://privatoria.net/"><img src="img/provider/Privatoria.gif" width="200" height="70"></a>
+      </td>
+      <td data-value="23">$ 22.8</td>
+      <td><span class="label label-success">Yes</span></td>
+      <td>22</td>
+      <td><span class="flag-icon flag-icon-cz"></span> Czech Republic</td>
+      <td><a href="https://privatoria.net/">Privatoria.net</a></td>
+    </tr>
+-->
+    <tr>
+         <td data-value="ProtonVPN">
+             <a href="https://protonvpn.com/"><img src="img/provider/ProtonVPN.png" width="200" height="70"></a     >
+         </td>
+         <td data-value="0">Free</td>
+         <td><span class="label label-success">ja</span></td>
+         <td>112</td>
+         <td><span class="flag-icon flag-icon-ch"></span> Schweiz</td>
+         <td><a href="https://protonvpn.com/">ProtonVPN.com</a></td>
+    </tr>
+
+    <tr>
+      <td data-value="Proxy.sh">
+        <a href="https://proxy.sh/"><img src="img/provider/Proxy.sh.gif" width="200" height="70"></a>
+      </td>
+      <td data-value="90">$ 90</td>
+      <td><span class="label label-warning">nein</span></td>
+      <td>300</td>
+      <td><span class="flag-icon flag-icon-sc"></span> Seychellen</td>
+      <td><a href="https://proxy.sh/">Proxy.sh</a></td>
+    </tr>
+
+    <tr>
+      <td data-value="Trust.Zone">
+        <a href="https://trust.zone/"><img src="img/provider/Trust.Zone.gif" width="200" height="70"></a>
+      </td>
+      <td data-value="40">$ 39.95</td>
+      <td><span class="label label-success">ja</span></td>
+      <td>48</td>
+      <td><span class="flag-icon flag-icon-sc"></span> Seychellen</td>
+      <td><a href="https://trust.zone/">Trust.Zone</a></td>
+    </tr>
+
+    <tr>
+      <td data-value="VPN.ht">
+        <a href="https://vpn.ht/"><img src="img/provider/VPN.ht.gif" width="200" height="70"></a>
+      </td>
+      <td data-value="40">$ 39.99</td>
+      <td><span class="label label-warning">nein</span></td>
+      <td>122</td>
+      <td><span class="flag-icon flag-icon-hk"></span> Hong Kong</td>
+      <td><a href="https://vpn.ht/">VPN.ht</a></td>
+    </tr>
+
+    <tr>
+      <td data-value="VPNTunnel">
+        <a href="https://vpntunnel.com/"><img src="img/provider/VPNTunnel.gif" width="200" height="70"></a>
+      </td>
+      <td data-value="36">$ 35.88</td>
+      <td><span class="label label-warning">nein</span></td>
+      <td>80</td>
+      <td><span class="flag-icon flag-icon-sc"></span> Seychellen</td>
+      <td><a href="https://vpntunnel.com/">VPNTunnel.com</a></td>
+    </tr>
+
+  </tbody>
 </table>
-
-</div>
-
-<!-- *RIGHT* -->
-<div class="col-md-6">
-
-<h2>Teil 2</h2>
-<br/>
-
-<table class="sortable-theme-bootstrap" data-sortable>
-<thead>
-<tr>
-<th data-sortable="true">VPN / Land</th>
-<th data-sortable="true" title="Number of Servers">Server</th>
-<th data-sortable="true">Preis</th>
-</tr>
-</thead>
-<tbody>
-
-<tr>
-<td data-value="IVPN"><a href="https://www.ivpn.net/" target="_blank"><img src="img/provider/IVPN.gif" width="200" height="70"><br />IVPN.net (Gibraltar)</a></td>
-<td>15</td>
-<td data-value="100">$ 100</td>
-</tr>
-
-<tr>
-<td data-value="Mullvad"><a href="https://mullvad.net/" target="_blank"><img src="img/provider/Mullvad.gif" width="200" height="70"><br />Mullvad.net (Schweden)</a></td>
-<td>23</td>
-<td data-value="60">60 &euro;</td>
-</tr>
-
-<tr>
-<td data-value="NordVPN"><a href="https://nordvpn.com/" target="_blank"><img src="img/provider/NordVPN.gif" width="200" height="70"><br />NordVPN.com (Panama)</a></td>
-<td>52</td>
-<td data-value="48">$ 48</td>
-</tr>
-
-<tr>
-<td data-value="Perfect Privacy"><a href="https://www.perfect-privacy.com/" target="_blank"><img src="img/provider/Perfect-Privacy.gif" width="200" height="70"><br />Perfect-Privacy.com (Panama)</a></td>
-<td>40</td>
-<td data-value="150">150 &euro;</td>
-</tr>
-
-<!-- <tr>
-<td data-value="Privatoria"><a href="https://privatoria.net/" target="_blank"><img src="img/provider/Privatoria.gif" width="200" height="70"><br />Privatoria.net (Tschechische Republik)</a></td>
-<td>12</td>
-<td data-value="90">$ 22,8</td>
-</tr>
---->
-<tr>
-<td data-value="Proxy.sh"><a href="https://proxy.sh/" target="_blank"><img src="img/provider/Proxy.sh.gif" width="200" height="70"><br />Proxy.sh (Seychellen)</a></td>
-<td>288</td>
-<td data-value="90">$ 90</td>
-</tr>
-
-</tbody>
-</table>
-
-</div>
-</div>
-</div>
-<!-- *END LEFT & RIGHT* -->
 
 <!-- END VPN TABLE -->
 <br>
