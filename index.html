@@ -1230,22 +1230,21 @@ Mit Mail-in-a-Box kannst du in ein paar einfachen Schritten dein eigener Mail-Di
 <h3 class="panel-title">Conversations | XMPP (mit OMEMO)</h3>
 </div>
 <div class="panel-body">
-<p><img src="img/tools/conversations_logo.png" align="right" style="margin-left:5px;">Conversations ist ein Programm, welches auf das XMPP Protokoll zur&uuml;ck greift. Damit ist gr&ouml;&szlig;tm&ouml;gliche Reichweite und Kompatibilit&auml;t gew&auml;hrleistet. Verschl&uuml;sselt wird per <a href="https://de.wikipedia.org/wiki/OMEMO" target="_blank">OMEMO</a> oder <a href="https://de.wikipedia.org/wiki/Off-the-Record_Messaging" target="_blank">OTR</a>. Mobil und für den einsatz mit mehreren Geräten ist
-	zu bevorzugen!</p>
+<p><img src="img/tools/conversations_logo.png" align="right" style="margin-left:5px;">Conversations ist ein Programm, welches auf das XMPP Protokoll zur&uuml;ck greift. Damit ist gr&ouml;&szlig;tm&ouml;gliche Reichweite und Kompatibilit&auml;t gew&auml;hrleistet. Verschl&uuml;sselt wird per <a href="https://de.wikipedia.org/wiki/OMEMO" target="_blank">OMEMO</a> oder <a href="https://de.wikipedia.org/wiki/Off-the-Record_Messaging" target="_blank">OTR</a>. Mobil und für den einsatz mit mehreren Geräten ist OMEMO zu bevorzugen!</p>
 <p><a href="https://conversations.im/" target="_blank"><button type="button" class="btn btn-success">Download: Conversations</button></a></p>
-<p><strong>OS:</strong> Android (f&uuml;r iOS wird OMEMO in Chatsecure <a href="https://chatsecure.org/blog/" target="_blank">implementiert</a>!)</p>
+<p><strong>OS:</strong> Android</p>
 </div>
 </div>
 </div>
 <div class="col-sm-4">
 <div class="panel panel-info">
 <div class="panel-heading">
-<h3 class="panel-title">Sicher: ChatSecure (mit OMEMO)</h3>
+<h3 class="panel-title">ChatSecure | XMPP (mit OMEMO)</h3>
 </div>
 <div class="panel-body">
 <p><img src="img/tools/ChatSecure.png" align="right" style="margin-left:5px;">ChatSecure ist ein freier und quelloffener Messenger mit OMEMO und OTR Verschl&uuml;sselung per XMPP (Jabber). Du kannst bestehende Jabber Server verwenden oder einen eigenen XMPP Server betreiben, f&uuml;r das Plus an Sicherheit.</p>
 <p><a href="https://www.chatsecure.org/" target="_blank"><button type="button" class="btn btn-info">Download: ChatSecure</button></a></p>
-<p><strong>OS:</strong> iOS, Android, <a href="https://en.wikipedia.org/wiki/Off-the-Record_Messaging#Client_support" target="_blank">andere OTR Clients.</a></p>
+<p><strong>OS:</strong> iOS <a href="https://en.wikipedia.org/wiki/Off-the-Record_Messaging#Client_support" target="_blank">andere OTR Clients.</a></p>
 </div>
 </div>
 </div>
@@ -1268,14 +1267,16 @@ Mit Mail-in-a-Box kannst du in ein paar einfachen Schritten dein eigener Mail-Di
 
 <h3>Erw&auml;hnenswert:</h3>
 <ul>
+    <li><a href="https://gajim.org/" target="_blank">Gajim</a> - Ein OpenSource Crossplattform Messenger für Desktop Betriebssysteme der das XMPP Protokoll verwendet und mit seiner Plug-in Struktur auch <a href="https://dev.gajim.org/gajim/gajim-plugins/wikis/OmemoGajimPlugin" target="_blank">OMEMO</a> beherscht. Damit kann man XMPP mit OMEMO auch auf Linux und Windows verwenden.
     <li><a href="https://www.kontalk.org" target="_blank">Kontalk</a> - Ein gemeinschaftlich betriebenes Instant-Messaging-Netzwerk. Die gesammte Kommunikation wird mittels OpenPGP Ende-zu-Ende verschlüsselt. Sowohl Verbindungen von Client-zu-Server als auch von Server-zu-Server sind durchgehend durch eine Transportverschlüsselung gesichert. <a href="https://github.com/kontalk">Auf GitHub</a> kann der Quellcode für den Server als auch für Android- und Desktopclient eingesehen werden.</li>
-	<li><a href="https://ricochet.im/" target="_blank">Ricochet</a> - Ricochet ist eine experimentelle aber schon sichere L&ouml;sung, um komplett verschl&uuml;sselt und ohne Meta Daten zu hinterlassen zu kommunizieren. <a href="https://github.com/ricochet-im/ricochet">HIER</a> gibt es weitere Infos auf GitHub.</li>
+	<li><a href="https://ricochet.im/" target="_blank">Ricochet</a> - Ricochet ist eine experimentelle aber schon sichere L&ouml;sung, um komplett verschl&uuml;sselt und ohne Meta Daten zu hinterlassen zu kommunizieren. Dazu müssen jedoch alle Chatpartner zur gleichen Zeit online sein.<a href="https://github.com/ricochet-im/ricochet">HIER</a> gibt es weitere Infos auf GitHub.</li>
     <li><a href="https://threema.ch/de/" target="_blank">Threema</a> - Threema ist ein Crypto Messenger aus der Schweiz. Zwar nicht open source(!) aber bereits <a href="https://threema.ch/press-files/2_documentation/external_audit_security_statement.pdf" target="_blank">diverse Male</a> <a href="https://www.os3.nl/_media/2013-2014/courses/ssn/projects/threema_report.pdf#page13" target="_blank">reverse engineered</a> wurden keine Schwachstellen in der Implementierung oder Backdoors entdeckt. Threema verschl&uuml;sselt Ende zu Ende, der Server in der Schweiz bildet nur das Relais. Da kein Telefonnummernabgleich n&ouml;tig ist sind auch Metadaten kein gro&szlig;es Thema. Allemal besser als WhatsApp.</li>
 </ul>
 
 <h3>Weitere Informationen</h3>
 <ul>
 <li><a href="https://firstlook.org/theintercept/2015/07/14/communicating-secret-watched/" target="_blank">geheime Unterhaltungen w&auml;hrend wir &uuml;berwacht werden</a> - firstlook.org</li>
+<li>Eine ausführliche und verständliche Analyse der Messengerlandschaft und Plädoyer für XMPP<a href="https://www.kuketz-blog.de/conversations-sicherer-android-messenger/" target="_blank">Link</a></li>
 </ul>
 
 <a class="anchor" id="voip"></a>
