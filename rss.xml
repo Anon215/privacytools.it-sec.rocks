@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+<title>Deutsche Version von Privacytools.io</title>
+<link>https://privacytools.it-sec.rocks/</link>
+<description>Schütze deine Privatsphäre!</description>
+<atom:link href="https://privacytools.it-sec.rocks/rss.xml" type="application/rss+xml" rel="self"></atom:link>
+<language>de</language>
+<copyright>https://privacytools.it-sec.rocks</copyright>
+<lastBuildDate>Thu, 12 Apr 2018 19:16:17 GMT</lastBuildDate>
+<docs>http://blogs.law.harvard.edu/tech/rss</docs>
+
+<item>
+<title>Hallo Welt! - Hier ist der RSS Feed</title>
+<link>https://privacytools.it-sec.rocks/</link>
+<dc:creator>Das Team</dc:creator>
+<description>
+Das ist der erste RSS-Feed-Beitrag. Zukünftig wird dieser Kanal genutzt, um dich über die Veränderungen der Seite auf dem Laufenden zu halten. Aktuell wird wohl ein wöchentliche Benachrichtigung ausreichen.
+&lt;br&gt;
+&lt;br&gt;
+Bei Rückfragen stehen wir dir gerne zur Verfügung.&lt;br&gt;
+&lt;br&gt;
+#### DEMO ####
+&lt;br&gt;
+Changelog - 14.-20.05.2018&lt;br&gt;
+Aktualisiert:&lt;br&gt;
+*&lt;br&gt;
+&lt;br&gt;
+Hinzugefügt:&lt;br&gt;
+*&lt;br&gt;
+&lt;br&gt;
+Entfernt:&lt;br&gt;
+*&lt;br&gt;
+</description>
+<category>Intern</category>
+<guid>https://privacytools.it-sec.rocks/</guid>
+<pubDate>12 Apr 2018 15:00:01 GMT</pubDate></item>
+
+<!--VORLAGE
+<item>
+<title>Titel</title>
+<link>https://privacytools.it-sec.rocks/</link>
+<dc:creator>Dein Team</dc:creator>
+<description>
+####### TEXT #######
+Changelog - 14.-20.05.2018&lt;br&gt;
+Aktualisiert:&lt;br&gt;
+*&lt;br&gt;
+&lt;br&gt;
+Hinzugefügt:&lt;br&gt;
+*&lt;br&gt;
+&lt;br&gt;
+Entfernt:&lt;br&gt;
+*&lt;br&gt;
+</description>
+<category>Changelog</category>
+<guid>https://privacytools.it-sec.rocks/</guid>
+<pubDate>Tue, 03 Apr 2018 21:00:01 GMT</pubDate></item>-->
+
+</channel>
+</rss>
